@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazzle and Delight</title>
+    <link rel="icon" href="../photos/logo.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/eve_info.css">
+</head>
+<body>
+    <header class="head">
+        <a href="index.html" class="logo">Dazzle and Delight</a>
+        <nav class="navbar ">
+            <a href="index.html" class="active">Home</a>
+            <a href="events.html">Events</a>
+            <a href="add_event.html">New Event</a>
+            <a href="location.html">Locations</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+    <div class="kaurukaanibox">
+        <p class="sinop">
+        <b>Synopsis</b>Fall in love again with the language of Austen with Tony-Nominated Paul Gordon's Emma. Based on a timeless love story by Jane Austen
+        <br><br>
+        EMMA, a timeless love story from one of the most widely read writers of all time, is a musical that will entice modern audiences to fall in love again with one of Jane Austen’s most adored characters. Paul Gordon’s critically acclaimed stage adaptation re-imagines the Austen’s classic in mid-century modern yet keeps the language intact.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam aperiam doloremque doloribus adipisci laboriosam eligendi ipsam in maiores expedita. Beatae earum facere ipsum laboriosam eius assumenda quia animi, est blanditiis.
+        <button class="btn">Book Tickets</button>
+    </p>
+        <div class="a-info">
+        <strong>Emma | The Musical</strong>
+        <img src="../photos/event5.jpg" />
+        <table>
+        <tbody>
+        <tr><th>Genre</th><td>Theatre and Arts</td></tr>
+        <tr><th>For Age(s)</th><td>Family Friendly</td></tr>
+        <tr><th>Language</th><td>English</td></tr>
+        <tr><th>Price</th><td>₹500</td></tr>
+        <tr><th>Cast & Crew</th><td>Kelli Barrett as Emma Woodhouse,
+
+            Timothy Gulan as Mr. Knightley,
+            
+            Dani Marcus as Harriet Smith,
+            
+            Lauren Cohn as Miss Bates,
+            
+            Brian Herndon as Mr. Elton,
+            
+            Richert Easley as Mr. Woodhouse</td></tr>
+        <tr><th>Live Performance</th><td>Enjoy a unique experience</td></tr>
+        </tbody> 
+        </table>
+        </div>
+        </div>
+        
+        <script>
+            document.querySelectorAll(".kaurukaanibox .a-info .k-link").forEach(function(e){
+                var t=e.textContent.split(", "),n=document.createElement("div");
+                t.forEach(function(e,a){
+                    var r=document.createElement("a");
+                    r.textContent=e,r.setAttribute("href","/search?q="+e+"&max-results=12"),n.appendChild(r),a<t.length-1&&n.appendChild(document.createTextNode(", "))
+                }),e.innerHTML="",e.appendChild(n)
+            });
+        </script>
+</body>
+</html>

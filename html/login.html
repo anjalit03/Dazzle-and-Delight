@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../photos/logo.jpg">
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+          <h1><a href="index.html">Dazzle and Delight</a></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="add_event.html">New Event</a></li>
+              <li><a href="locations.html">Locations</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+    </header>
+  <div class="container" id="container">
+      <div class="form-container sign-up-container">
+          <form action="#" id="sgnup">
+              <h1>Create Account</h1>
+              <input type="text" name="txt" placeholder="Name" />
+              <input type="text" name="email" placeholder="Email" />
+              <input type="password" name="pswd" placeholder="Password" />
+              <input type="password" name="pswd2" placeholder="Confirm Password" />
+              <button onclick="formValidation('sgnup')">Sign Up</button>
+          </form>
+      </div>
+      <div class="form-container sign-in-container">
+          <form action="index.html" id="lgn">
+              <h1>Sign in</h1>
+              <input type="text" name="email" placeholder="Email" />
+              <input type="password" name="pswd" placeholder="Password" />
+              <a href="#">Forgot your password?</a>
+              <button onclick="formValidation('lgn')">Sign In</button>
+          </form>
+      </div>
+      <div class="overlay-container">
+          <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                  <h1>Welcome Back!</h1>
+                  <p>To keep connected with us please login with your personal info</p>
+                  <button class="ghost" id="signIn">Sign In</button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <button class="ghost" id="signUp">Sign Up</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <footer>
+      <p>
+          Designed  by Anjali Thakur :) 
+    </p>
+  </footer>
+
+  <script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+    function formValidation(a){
+			var f=document.getElementById(a);
+            var t=true;
+			
+			if(a=="sgnup"){
+				if(f.txt.value.length<5 || f.txt.value.length>20 || f.txt.value.match('[^A-z  ]')){
+                    t=false;
+					alert("Name : MUST be of atleast 5 characters or maximum 20 characters"+
+							"\nMUST contain only characters or space");
+				}
+			}
+
+			if(!f.email.value.match(/^([A-z]{1})([A-z 0-9 _ .]{5,15})@([A-z]{5,10}).com$/)){
+                t=false;
+				alert("Email : enter a valid email ID");
+			}
+
+			if(!(f.pswd.value.match('[A-Z]{1,}') && f.pswd.value.match('[a-z]{1,}') 
+					&& f.pswd.value.match('[0-9]{1,}') && f.pswd.value.match('[^A-z 0-9]{1,}'))
+					|| f.pswd.value.length<7){
+                t=false;
+				alert("Password : MUST contain atleast 8 characters (12+ recommended)"+
+						"\nMUST contain at least 1 uppercase letter"+
+						"\nMUST contain atleast 1 lowercase letter"+
+						"\nMUST contain atleast 1 number"+
+						"\nMUST contain atleast 1 special character");
+			}
+
+			if(a=="sgnup"){
+                t=false;
+				if(f.pswd2.value!=f.pswd.value){
+					alert("Passwords don't match");
+				}
+			}
+
+            if(t==true){
+                if(a=="sgnup"){
+                    alert("Account Successfully created! Please login now!!");
+                }
+                else{
+                    alert("Logged in successfully!!");
+                }
+            }
+		}
+  </script>
+</body>
+</html>
