@@ -52,7 +52,7 @@ Once you have completed your changes and thoroughly tested them, you can submit 
    - **Commit and Push**: Once you’ve made the requested changes, commit them to your branch and push the updates to your fork.
      ```bash
      git add .
-     git commit -m "Address feedback: update URL validation logic"
+     git commit -m "updated Readme.md file"
      git push origin feature/your-feature-name
      ```
    - **Update the PR**: The pull request will automatically update to include your latest commits. Consider adding a comment to the PR to summarize the changes made in response to the feedback, especially if multiple rounds of feedback are provided.
