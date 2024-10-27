@@ -1,93 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us</title>
-    <link rel="icon" href="../photos/logo.jpg">
-    <link rel="stylesheet" href="../css/contact_us.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css'>
-</head>
-<body>
-    <header id="home">
-        <nav>
-            <h1><a href="index.html">Dazzle and Delight</a></h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="add_event.html">New Event</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="wrapper glass-effect">
-        <div class="contact_us_header"><h2>Contact Us</h2></div>
-        <div id="error_message" class="error_message"></div>
-        <form action="" id="myform" onsubmit="return validate();">
-            <div class="input_field">
-                <input type="text" placeholder="Name" id="name" required>
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Subject" id="subject" required>
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Phone" id="phone" required>
-            </div>
-            <div class="input_field">
-                <input type="email" placeholder="Email" id="email" required>
-            </div>
-            <div class="input_field">
-                <textarea placeholder="Message" id="message" required></textarea>
-            </div>
-            <div class="btn">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Contact Us</title>
+		<link rel="icon" href="photos/logo.jpg" />
+		<link rel="stylesheet" href="css/contact_us.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css"
+		/>
+	</head>
+	<body>
+		<header id="home">
+			<nav>
+				<h1><a href="index.html">Dazzle and Delight</a></h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="add_event.html">New Event</a></li>
+					<li><a href="locations.html">Locations</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <script>
-        function validate() {
-            var name = document.getElementById("name").value;
-            var subject = document.getElementById("subject").value;
-            var phone = document.getElementById("phone").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-            var error_message = document.getElementById("error_message");
+		<div class="wrapper glass-effect">
+			<div class="contact_us_header"><h2>Contact Us</h2></div>
+			<div id="error_message" class="error_message"></div>
+			<form action="" id="myform" onsubmit="return validate();">
+				<div class="input_field">
+					<input type="text" placeholder="Name" id="name" required />
+				</div>
+				<div class="input_field">
+					<input
+						type="text"
+						placeholder="Subject"
+						id="subject"
+						required
+					/>
+				</div>
+				<div class="input_field">
+					<input
+						type="text"
+						placeholder="Phone"
+						id="phone"
+						required
+					/>
+				</div>
+				<div class="input_field">
+					<input
+						type="email"
+						placeholder="Email"
+						id="email"
+						required
+					/>
+				</div>
+				<div class="input_field">
+					<textarea
+						placeholder="Message"
+						id="message"
+						required
+					></textarea>
+				</div>
+				<div class="btn">
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
 
-            error_message.style.padding = "10px";
-            var text;
+		<script>
+			function validate() {
+				var name = document.getElementById("name").value;
+				var subject = document.getElementById("subject").value;
+				var phone = document.getElementById("phone").value;
+				var email = document.getElementById("email").value;
+				var message = document.getElementById("message").value;
+				var error_message = document.getElementById("error_message");
 
-            if (name.length < 5) {
-                text = "Please Enter a valid Name (min 5 characters).";
-                error_message.innerHTML = text;
-                return false;
-            }
-            if (subject.length < 10) {
-                text = "Please Enter a Correct Subject (min 10 characters).";
-                error_message.innerHTML = text;
-                return false;
-            }
-            if (isNaN(phone) || phone.length != 10) {
-                text = "Please Enter a valid Phone Number (10 digits).";
-                error_message.innerHTML = text;
-                return false;
-            }
-            if (!email.match(/^([A-z]{1})([A-z 0-9 _ .]{5,15})@([A-z]{5,10}).com$/)) {
-                text = "Please Enter a valid Email.";
-                error_message.innerHTML = text;
-                return false;
-            }
-            if (message.length <= 140) {
-                text = "Please Enter More Than 140 Characters in Message.";
-                error_message.innerHTML = text;
-                return false;
-            }
-            alert("Form Submitted Successfully!");
-            return true;
-        }
-    </script>
-</body>
+				error_message.style.padding = "10px";
+				var text;
+
+				if (name.length < 5) {
+					text = "Please Enter a valid Name (min 5 characters).";
+					error_message.innerHTML = text;
+					return false;
+				}
+				if (subject.length < 10) {
+					text =
+						"Please Enter a Correct Subject (min 10 characters).";
+					error_message.innerHTML = text;
+					return false;
+				}
+				if (isNaN(phone) || phone.length != 10) {
+					text = "Please Enter a valid Phone Number (10 digits).";
+					error_message.innerHTML = text;
+					return false;
+				}
+				if (
+					!email.match(
+						/^([A-z]{1})([A-z 0-9 _ .]{5,15})@([A-z]{5,10}).com$/
+					)
+				) {
+					text = "Please Enter a valid Email.";
+					error_message.innerHTML = text;
+					return false;
+				}
+				if (message.length <= 140) {
+					text = "Please Enter More Than 140 Characters in Message.";
+					error_message.innerHTML = text;
+					return false;
+				}
+				alert("Form Submitted Successfully!");
+				return true;
+			}
+		</script>
+	</body>
 </html>
