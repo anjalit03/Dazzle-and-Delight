@@ -3,10 +3,29 @@
 
 :root {
     --clr1: #222;
-    --clr2: rgb(241, 7, 167);
-    --clr3: lightgray;
-    --clr4: #fff;
+    --clr2: rgba(40,57,101,.9);
+    --clr3: #fff;
+    --clr4: #000;
     --clr5: lightgray;
+    --clr6: yellow;
+}
+
+.events{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("back-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendor{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("back-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -15,6 +34,7 @@
     box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
     font-family: 'Joan', serif;
 }
@@ -98,10 +118,6 @@ section h4 {
     letter-spacing: .2rem;
 }
 
-.title h1{
-    color: #fff;
-}
-
 .title span {
     color: var(--clr2);
     font-size: 4rem;
@@ -111,6 +127,24 @@ section h4 {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--clr4);
+}
+
+.title1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+.title1 span {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.title1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 /*----------------------header section---------------*/
@@ -126,6 +160,10 @@ section h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.fa-heart {
+    color: red;
 }
 
 .head .logo {
@@ -156,74 +194,157 @@ span {
     color: var(--clr3);
 }
 
-/*----------------------------venue section-----------------*/
+/*----------------------Home-------------*/
 
-.venue .venue-list {
-    display: flex;
-    align-items: center;
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("back-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.venue .venue-list .venue-box {
-    flex: 1 1 50rem;
-    margin: 1rem;
-    position: relative;
-    border-radius: .6rem;
-    overflow: hidden;
-    height: 20rem;
-}
-
-.venue .venue-list .venue-box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.venue .venue-list .venue-box .venue-info {
-    display: flex;
-    flex-flow: column;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    height: 80vh;
+}
+
+.search-box {
+    margin: 20rem 0 0 0;
+    color: var(--clr3);
+    text-align: center;
+}
+
+.search-box h1 {
+    font-size: 5.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.search-box p {
+    font-size: 1.8rem;
+    margin: .5rem 0;
+}
+
+.search-field {
+    width: 25rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--clr2);
+}
+
+@media(max-width:767px) {
+    .search-box h1 {
+        font-size: 4rem;
+    }
+    .search-field {
+        width: 15rem;
+    }
+}
+
+/*-------------------services--------------*/
+
+/*----------------------vendor section------------*/
+
+/*--------------------------e-invitation section-----------*/
+
+/*linked to another file test.css*/
+
+/*---------------------------footer section-------------*/
+
+footer {
+    padding: 5rem 5%;
+}
+
+#contact {
+    background-color: var(--clr2);
+}
+
+.container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.f-container h2 {
+    font-size: 2.5rem;
+    color: var(--clr3);
+    padding: 1rem 0;
+}
+
+.f-container a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--clr3);
+    padding: 1rem 0;
+    display: block;
+}
+
+.f-container a:hover {
+    transform: translateX(.5rem);
+    transition: .5s ease;
+}
+
+.f-container i {
+    padding-right: .5rem;
+    color: var(--clr1);
+}
+
+.f-container p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--clr1);
+}
+
+.f-container input {
+    width: 90%;
+    padding: 1rem;
+    background: #eee;
+    border: .2rem solid var(--clr1);
+}
+
+.f-container .btn {
+    background: var(--clr1);
     color: #fff;
-    background: rgba(46, 39, 40, 0.5);
-    transform: scale(1.3);
-    opacity: 0;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: .2rem;
+}
+
+.f-container .social i {
+    margin-top: 1rem;
+    font-size: 2rem;
+    background: var(--clr3);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.f-container .social i:hover {
+    transform: rotate(360deg);
     transition: 1s ease;
 }
 
-.venue .venue-list .venue-box:hover .venue-info {
-    transform: scale(1);
-    opacity: 1;
+.footer-content {
+    padding: 2rem 0;
+    text-align: center;
 }
 
-.venue .venue-list .venue-box .venue-info h2 {
-    letter-spacing: .1rem;
+.footer-content h1 {
     font-size: 3rem;
+    color: #aaa;
 }
 
-.venue .venue-list .venue-box .venue-info p {
-    letter-spacing: .1rem;
-    font-size: 2rem;
-}
-
-.venue .venue-list .venue-box .venue-info .btn {
-    width: 12rem;
-    height: 4rem;
-    margin: 1rem;
-    padding: .6rem;
-    letter-spacing: .1rem;
-    font-size: 1.6rem;
-    font-weight: 700;
+.copyright {
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--clr1);
     color: #fff;
-    background: rgba(40,57,101,.9);
-    border: none;
-    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+
+.copyright p {
+    font-size: 1.2rem;
+    color: #aaa;
 }
 
 /*----------------------media Query-------------------*/
