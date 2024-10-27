@@ -68,7 +68,7 @@ Launch the development server with:
 npm start
 ```
 
-The app should be available at `http://127.0.0.1:5500/Dazzle-and-Delight/html/index.html`.
+The app should be available at `http://localhost:3000/`.
 
 ## 🤝 **Contributing**
 
@@ -79,6 +79,8 @@ We welcome contributions to improve **Dazzle and Delight**! To contribute:
 3. Make your changes and commit (`git commit -m 'Add some feature'`) 💡
 4. Push to the branch (`git push origin feature/your-feature`) 📤
 5. Open a Pull Request 🔄
+
+**Read the [CONTRIBUTING.md](https://github.com/anjalit03/Dazzle-and-Delight/blob/main/CONTRIBUTING.md) file** to understand the contribution guidelines.
 
 ## 📄 **License**
 
