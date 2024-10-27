@@ -1,124 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-	box-sizing: border-box;
-	font-family: 'Joan', serif;
-}
-
-body{
-  background: url("back-4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 350px;
-  width: 100%;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-  padding: 25px;
-  border-radius: 5px;
-  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
-}
-
-.wrapper h2{
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #ffffff;
-}
-
-.wrapper .input_field{
-  margin-bottom: 10px;
-}
-
-.wrapper .input_field input[type="text"],
-.wrapper textarea{
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  padding: 10px;
-}
-
-.wrapper textarea{
-  resize: none;
-  height: 80px;
-}
-
-.wrapper .btn input[type="submit"]{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  background: #fece0c;
-  color: #332902;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-#error_message{
-  margin-bottom: 20px;
-  background: #fe8b8e;
-  padding: 0px;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
-a {
-    text-decoration: none;
-    color: var(--light-color);
-}
-
-h1{
-    color: #fff;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2.5rem;
-    z-index: 100;
-    width: 100%;
-    transition: background 0.3s;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav li:not(:last-child), .welcome-event div span {
-    margin-right: 1.5rem;
+body {
+	background: linear-gradient(
+			to bottom,
+			rgba(32, 4, 86, 0.6),
+			rgba(255, 255, 255, 0.5)
+		),
+		/* Purple gradient */ url("../photos/background.jpg") no-repeat center
+			center fixed;
+	background-size: cover;
+	font-family: Arial, sans-serif;
 }
 
 header {
-    height: 10vh;
-    background-color: #222;
-    color: #fff;
-    font-size: 15px;
-    top: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+h1 a,
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+.wrapper {
+	margin-top: 100px; /* Adjusted to prevent overlap with the fixed header */
+	padding: 40px; /* Increased padding for more space */
+	border-radius: 15px; /* Slightly rounded corners */
+	box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2); /* Increased shadow for better depth */
+	max-width: 800px; /* Increased maximum width for a larger box */
+	margin-left: auto; /* Center the container */
+	margin-right: auto; /* Center the container */
+	background: rgba(255, 255, 255, 0.3); /* Slightly more opaque background */
+}
+
+.contact_us_header {
+	font-size: 40px; /* Increased font size */
+	font-weight: bold; /* Bolder font weight */
+	color: #333; /* Darker color for better contrast */
+	text-align: center; /* Center align the title */
+	margin-bottom: 30px; /* Spacing below the title */
+}
+
+.input_field {
+	margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 15px; /* Increased padding for input fields */
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	transition: all 0.3s ease;
+	font-size: 16px; /* Increased font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border-color: #007bff;
+	outline: none;
+}
+
+textarea {
+	height: 150px; /* Increased height for the textarea */
+}
+
+.btn input[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 12px 20px; /* Increased padding for buttons */
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s;
+	font-size: 16px; /* Increased font size for button */
+}
+
+.btn input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+.error_message {
+	color: red;
+	margin-bottom: 10px;
+	text-align: center; /* Center align the error message */
 }
