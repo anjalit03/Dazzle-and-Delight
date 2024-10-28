@@ -180,6 +180,7 @@ span {
 
 .head .navbar {
     font-size: 1.8rem;
+
     color: var(--color-white);
     transition: var(--transition-standard);
   }
@@ -195,6 +196,7 @@ span {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("back-1.jpg");
+
     justify-content: space-between;
     font-weight: 500;
 }
@@ -432,6 +434,7 @@ footer {
     .home .inner-content {
         text-align: center;
     }
+
   }
   
   @media (max-width: 450px) {
@@ -511,6 +514,7 @@ header.head {
   .navbar.show {
       display: flex;
   }
+
     .home .inner-content-img img {
         width: 35rem;
         align-items: center;
@@ -524,4 +528,7 @@ header.head {
     .head {
         padding: 3rem;
     }
+
 }
+
+
