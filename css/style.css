@@ -431,3 +431,31 @@ footer {
         padding: 3rem;
     }
 }
+/* Scroll to top button functionality */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none; 
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: rgba(0, 0, 0, 0.2); 
+        }
+
+        #scrollTopBtn .arrow-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #33adff; 
+        }

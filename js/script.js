@@ -81,3 +81,21 @@ function formatDate(date) {
     let y = date.getFullYear();
     return '' + y + '-' + (m<=9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
 }
+
+        // Scroll to top button functionality added here
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+        
+        scrollTopBtn.onclick = function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+
+
+        
