@@ -2,7 +2,7 @@
 
 **Dazzle and Delight** is an event management website that provides a platform for users to view information about past events and upcoming events in their locality. The application allows users to view and book ongoing or upcoming events, ensuring a seamless experience for both event organizers and attendees.
 
-## 📖 **Ovaerview**
+## 📖 **Overview**
 
 The application provides the following features:
 
