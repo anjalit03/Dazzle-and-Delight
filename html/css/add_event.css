@@ -113,7 +113,7 @@ form textarea,
 form select {
   width: 100%;
   padding: 0.75rem 1rem;
-  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   border: 1px solid #dcdce6;
   border-radius: 6px;
   font-size: 16px;
@@ -121,6 +121,8 @@ form select {
   color: #333;
   transition: border-color 0.3s;
 }
+
+
 
 form input:focus,
 form textarea:focus {
