@@ -6,7 +6,7 @@ body {
   outline: 0;
   box-sizing: border-box;
   font-family: 'Joan', serif;
-  background-image: url("back-3.jpg");
+  background-image: url("../photos/back-3.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
