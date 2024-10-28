@@ -52,23 +52,13 @@ git clone https://github.com/harith-hacky03/Dazzle-and-Delight.git
 cd Dazzle-and-Delight
 ```
 
-### 2. **Install Dependencies**
 
-Run the following command to install dependencies:
+### 2. **Run the Application** 
 
-```bash
-npm install
-```
+To view the project, simply double-click on the index.html file located in the project folder. This will open the application in your default browser.
 
-### 3. **Run the Application**
 
-Launch the development server with:
 
-```bash
-npm start
-```
-
-The app should be available at `http://localhost:3000/`.
 
 ## 🤝 **Contributing**
 
