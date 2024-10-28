@@ -7,7 +7,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; 
-  background: linear-gradient(to right, #283048, #859398);
+  background: linear-gradient(to right, #283048, #859398), url("../photos/back-3.jpg");
   color: #333;
   display: flex;
   align-items: center;
