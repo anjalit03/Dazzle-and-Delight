@@ -134,7 +134,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("back-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../photos/back-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
