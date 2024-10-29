@@ -5,21 +5,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Add New Event</title>
       <link rel="stylesheet" href="css/add_event.css">
-      <link rel="stylesheet" href="css/navbar.css">
       <link rel="icon" href="photos/logo.jpg">
     </head>
    <body>
-    <header class="head" >
-      <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
-      <nav class="navbar " style="display: flex;justify-content:center; align-items: center;">
-          <a href="index.html" class="active" style="font-size: 20px;">Home</a>
-          <a href="events.html" style="font-size: 20px;">Events</a>
-          <a href="add_event.html" style="font-size: 20px;">New Event</a>
-          <a href="location.html" style="font-size: 20px;">Locations</a>
-          <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
-          <a href="login.html" style="font-size: 20px;">Login</a>
+    <header id="home">
+      <nav>
+        <h1><a href="index.html">Dazzle and Delight</a></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="add_event.html">New Event</a></li>
+            <li><a href="location.html">Locations</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
       </nav>
-      <div id="menu-bar"><i class="fas fa-bars"></i></div>
   </header>
 
     <main class="content">
@@ -29,24 +30,41 @@
         </div>
         <div class="main-form">
           <form id="event">
-            <input type="text" name="ftitle" placeholder="Add title">
-            <input type="text" name="fdescription" placeholder="Add description">
-            <input type="text" name="flocation" placeholder="Add location">
+            <div class="event-label-textarea">
+              <label for="Title">Title : </label>
+              <input type="text" name="ftitle" placeholder="Add title">
+            </div>
 
-            <div class="input-group">
-              <input type="date" name="fdate" id="dateF">
-              <label for="fallday" class="all_day">All day:</label>
+            <div class="event-label-textarea">
+              <label for="Description">Description : </label>
+              <input type="text" name="fdescription" placeholder="Add Description">
+            </div>
+            <div class="event-label-textarea">
+              <label for="Location">Location : </label>
+              <input type="text" name="flocation" placeholder="Add location">
+            </div>
+
+              <div class="event-label-textarea">
+                <label for="Date">Date : </label>
+                <input type="date" name="fdate" id="dateF">
+              </div>     
+
+            <div class="event-time">
+                <div class="event-label-textarea">
+                  <label for="fstart">Start Time:</label>
+                  <input type="time" name="fstart" class="hour">
+                </div>
+                <div class="event-label-textarea">
+                  <label for="fend">End Time:</label>
+                  <input type="time" name="fend" class="hour">
+                </div>
+            </div>
+            
+            <div class="event-label-textarea-check">
               <input type="checkbox" class="checkbox" name="fallday">
+              <label for="fallday" class="all_day">All day</label>
             </div>
 
-            <div class="input-hour">
-              <div id="fhourdiv">
-                <label for="fstart">Start Time:</label>
-                <input type="time" name="fstart" class="hour">
-                <label for="fend">End Time:</label>
-                <input type="time" name="fend" class="hour">
-              </div>
-            </div>
             <input type="submit" onclick="check()" id="fsubmit" value="Save" class="button">
           </form>
         </div>
