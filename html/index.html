@@ -14,21 +14,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
-    <style>
-        /* Default styling for navigation links */
-        nav a {
-            font-size: 20px;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-        }
-
-        /* Active link styling */
-        .active {
-            background-color: goldenrod;
-            color: white; /* Adjust text color for contrast */
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -51,22 +53,22 @@
                 <h1>FIND NEW EXPERIENCES</h1>
                 <p>Explore. Discover. Make a Plan</p>
                 <select type="text" class="search-field">
-            <option disabled selected>Select event type</option>
-            <option value="Wedding Venues">Music</option>
-            <option value="Family makeup">Comedy</option>
-            <option value="bridal makeup">Documentary</option>
-            <option value="Groom Wear">Cultural</option>
-            <option value="Wedding Decoration">Games and Quizzes</option>
-            <option value="Wedding Decoration">Theatre and Art</option>
-        </select>
+                    <option disabled selected>Select event type</option>
+                    <option value="Wedding Venues">Music</option>
+                    <option value="Family makeup">Comedy</option>
+                    <option value="bridal makeup">Documentary</option>
+                    <option value="Groom Wear">Cultural</option>
+                    <option value="Wedding Decoration">Games and Quizzes</option>
+                    <option value="Wedding Decoration">Theatre and Art</option>
+                </select>
                 <select type="text" class="search-field">
-            <option disabled selected>City</option>
-            <option value="Anand">New Delhi</option>
-            <option value="Ahemdabad">Mumbai</option>
-            <option value="Mumbai">Bangalore</option>
-            <option value="Baroda">Jaipur</option>
-            <option value="Goa">Goa</option>
-        </select>
+                    <option disabled selected>City</option>
+                    <option value="Anand">New Delhi</option>
+                    <option value="Ahemdabad">Mumbai</option>
+                    <option value="Mumbai">Bangalore</option>
+                    <option value="Baroda">Jaipur</option>
+                    <option value="Goa">Goa</option>
+                </select>
                 <button class="btn">Search</button>
             </div>
         </form>
@@ -74,58 +76,53 @@
 
     <!------------------------events-------------------->
     <div class="events">
-        
+
         <main class="cd__main">
-            
+
             <div id="app">
-     <div class="card-row">
-        <div class="title1">
-            <h1><span>F</span>eautured <span>E</span>vents</h1>
-        </div>
-       <div 
-         v-for="(card, index) in cards" 
-         :key="index" 
-         :ref="`card_${index}`"
-         @mouseover="hoverCard(index)"
-         @mouseout="hoverCard(-1)"
-         class="card">
-         
-         <img class="card-image" :class="{'selected': isSelected(index)}"
-              :src="card.image">
-         
-         <div class="card-footer">
-           <p class="card-text">{{card.p1}}</p>
-           <h3 class="card-title">{{card.title}}</h3>
-           <p class="card-text">by 
-             <span class="card-author" :class="{'selected': isSelected(index)}">{{card.author}}</span>
-           </p>
-         </div>
-       </div>
-     </div>
-   </div>
-            
-         </main>
-         <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-    
-      <script src="js/slide.js"></script>
-        </div>
+                <div class="card-row">
+                    <div class="title1">
+                        <h1><span>F</span>eautured <span>E</span>vents</h1>
+                    </div>
+                    <div v-for="(card, index) in cards" :key="index" :ref="`card_${index}`"
+                        @mouseover="hoverCard(index)" @mouseout="hoverCard(-1)" class="card">
+
+                        <img class="card-image" :class="{'selected': isSelected(index)}" :src="card.image">
+
+                        <div class="card-footer">
+                            <p class="card-text">{{card.p1}}</p>
+                            <h3 class="card-title">{{card.title}}</h3>
+                            <p class="card-text">by
+                                <span class="card-author"
+                                    :class="{'selected': isSelected(index)}">{{card.author}}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+
+        <script src="js/slide.js"></script>
+    </div>
     <!-----------------------------vendor------------------->
     <section class="vendor" id="vendor">
         <div class="title">
             <h1><span>U</span>pcoming <span>E</span>vents</h1>
         </div>
-         <main class="cd___main">
+        <main class="cd___main">
             <div class="cal-modal-container">
-     <div class="cal-modal">
-       <div id="calendar">
-         <div class="placeholder"></div>
-         <div class="calendar-events">
-         </div>
-       </div>
-     </div>
-   </div>
-         </main>
+                <div class="cal-modal">
+                    <div id="calendar">
+                        <div class="placeholder"></div>
+                        <div class="calendar-events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
         <script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
         <script src="js/script.js"></script>
@@ -138,19 +135,21 @@
         </div>
         <div class="left-div css-jbfrby">
             <h3 class="css-1dcidbk">HIT PAUSE ON BOREDOM</h3>
-            <p class="css-eagu6t">Kickstart your resolution to party hard. Experience LIVE music, comedy, poetry, theatre, sports &amp; so much more…</p>
-            <p class="css-pwlugj">Watch and cheer for your favourite teams, Discover new hobbies with workshops &amp; courses And Groove to the beats of your favourite artists.</p>
+            <p class="css-eagu6t">Kickstart your resolution to party hard. Experience LIVE music, comedy, poetry,
+                theatre, sports &amp; so much more…</p>
+            <p class="css-pwlugj">Watch and cheer for your favourite teams, Discover new hobbies with workshops &amp;
+                courses And Groove to the beats of your favourite artists.</p>
         </div>
     </section>
 
     <!--------------------------------------------footer section--------------------------->
     <footer id="contact">
         <div class="container">
-            <div class="f-container">
+            <div class="f-container ">
                 <h2>Dazzle and Delight</h2>
-                
-                <p>Dazzle and Delight is a platform that helps you discover and buy the best in events, 
-                    travel and food in your city. We strive to curate experiences that are worth your 
+
+                <p class="p1">Dazzle and Delight is a platform that helps you discover and buy the best in events,
+                    travel and food in your city. We strive to curate experiences that are worth your
                     time and money, possibly something you have never tried before.</p>
 
                 <div>
@@ -170,23 +169,23 @@
                 <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
                 <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
                 <a href="#"><i class=" fas fa-angle-right "></i>Ahemdabad</a>
-                    <a href="# "><i class="fas fa-angle-right "></i>Surat</a>
-                </div>
-                
-                <div class="f-container ">
-                    <h2>Our Newsletter</h2>
-                    <p>Subscribe for latest updates</p>
-                    <input type="text " placeholder="Enter Your Email ">
-                    <button class="btn ">Subscribe</button>
-                    </div>
+                <a href="# "><i class="fas fa-angle-right "></i>Surat</a>
             </div>
-        </footer>
-        <div class="copyright ">
-            <p>Designed By Anjali Thakur :)</p>
+
+            <div class="f-container ">
+                <h2>Our Newsletter</h2>
+                <p>Subscribe for latest updates</p>
+                <input type="text " placeholder="Enter Your Email ">
+                <button class="btn ">Subscribe</button>
+            </div>
         </div>
+    </footer>
+    <div class="copyright ">
+        <p>Designed By Anjali Thakur :)</p>
+    </div>
 </body>
 <script>
-     let menu = document.querySelector('#menu-bar');
+    let menu = document.querySelector('#menu-bar');
     let head = document.querySelector('.head .navbar');
 
     menu.onclick = () => {
