@@ -158,6 +158,50 @@ span {
 
 /*----------------------------venue section-----------------*/
 
+
+  
+  /* Styling for the search container */
+  .search-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search input styling */
+  .search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Placeholder text color */
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Search button styling */
+  .search-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Icon styling for button */
+  .search-button i {
+    font-size: 20px;
+    color: #333;
+  }
+
+
+
 .venue .venue-list {
     display: flex;
     align-items: center;
@@ -171,7 +215,7 @@ span {
     position: relative;
     border-radius: .6rem;
     overflow: hidden;
-    height: 20rem;
+    height: 30rem;
 }
 
 .venue .venue-list .venue-box img {
@@ -221,9 +265,14 @@ span {
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
-    background: rgba(40,57,101,.9);
+    background: rgba(212, 7, 7, 0.9);
     border: none;
     border-radius: .5rem;
+}
+
+.venue .end{
+    font-size: 40px;
+    color: aquamarine;
 }
 
 /*----------------------media Query-------------------*/
