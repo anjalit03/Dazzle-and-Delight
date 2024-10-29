@@ -5,22 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Add New Event</title>
       <link rel="stylesheet" href="css/add_event.css">
+      <link rel="stylesheet" href="css/navbar.css">
       <link rel="icon" href="photos/logo.jpg">
     </head>
    <body>
-    <header id="home">
-      <nav>
-        <h1><a href="index.html">Dazzle and Delight</a></h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="add_event.html">New Event</a></li>
-            <li><a href="location.html">Locations</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
+    <header class="head" >
+      <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
+      <nav class="navbar " style="display: flex;justify-content:center; align-items: center;">
+          <a href="index.html" class="active" style="font-size: 20px;">Home</a>
+          <a href="events.html" style="font-size: 20px;">Events</a>
+          <a href="add_event.html" style="font-size: 20px;">New Event</a>
+          <a href="location.html" style="font-size: 20px;">Locations</a>
+          <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
+          <a href="login.html" style="font-size: 20px;">Login</a>
       </nav>
+      <div id="menu-bar"><i class="fas fa-bars"></i></div>
   </header>
 
     <main class="content">
@@ -42,7 +41,9 @@
 
             <div class="input-hour">
               <div id="fhourdiv">
+                <label for="fstart">Start Time:</label>
                 <input type="time" name="fstart" class="hour">
+                <label for="fend">End Time:</label>
                 <input type="time" name="fend" class="hour">
               </div>
             </div>
