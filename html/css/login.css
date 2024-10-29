@@ -14,7 +14,6 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
-	margin: -20px 0 50px;
 }
 
 h1 {
@@ -88,10 +87,10 @@ input {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .container {
-	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
 		0 10px 10px rgba(0, 0, 0, 0.22);
@@ -286,6 +285,15 @@ nav li:not(:last-child),
 	margin-right: 1.5rem;
 }
 
+nav ul a, nav h1 a {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+nav ul a:hover {
+	color: yellow;
+}
+
 header {
 	height: 10vh;
 	background-color: #222;
@@ -297,4 +305,38 @@ header {
 	right: 0;
 	text-align: center;
 	z-index: 999;
+}
+
+.sign-in-container h1, .sign-up-container h1 {
+	margin-bottom: 10px;
+}
+
+.sign-in-container a {
+	font-size: 15px;
+}
+
+.sign-in-container a:hover {
+	text-decoration: underline;
+}
+
+.sign-in-container button:hover, .sign-up-container button:hover {
+	cursor: pointer;
+	background: rgba(40, 57, 101, .7);
+}
+
+.sign-up-container button {
+	margin-top: 10px;
+}
+
+.overlay-right p, .overlay-left p {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.overlay-right button, .overlay-left button {
+    cursor: pointer;
+}
+
+.overlay-right button:hover, .overlay-left button:hover {
+    border: 2px solid #fff;
 }
