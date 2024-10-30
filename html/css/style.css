@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-
+/* font-family: "LXGW WenKai TC", cursive;
+font-family: "Merienda", cursive; */
 :root {
     --clr1: #222;
     --clr2: rgba(40, 57, 101, .9);
@@ -91,6 +92,7 @@ section h4 {
 }
 
 .btn {
+    font-family: "Josefin Sans", sans-serif;
     margin-top: 2rem;
     padding: 1.3rem 4rem;
     font-size: 1.5rem;
@@ -121,30 +123,38 @@ section h4 {
 .title span {
     color: var(--clr2);
     font-size: 4rem;
+    font-family: "Merienda", cursive;
 }
 
-.title p {
-    font-size: 1.8rem;
+.title h1 {
+    font-size: 3rem;
     font-weight: 600;
     color: var(--clr4);
+    font-family: "Merienda", cursive;
+    
 }
 
 .title1 {
+
     text-align: center;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-size: 2.5rem;
     letter-spacing: .2rem;
+    
 }
 
 .title1 span {
     color: #fff;
     font-size: 4rem;
+    font-family: "Merienda", cursive;
+    
 }
 
 .title1 h1 {
     font-size: 3rem;
     font-weight: 600;
     color: #fff;
+    font-family: "Merienda", cursive;
 }
 
 /*----------------------header section---------------*/
@@ -202,7 +212,8 @@ span {
 }
 
 .head .navbar a {
-    padding-left: 1.5rem;
+    font-family: "Merienda", cursive;
+    padding-left: 1.7rem;
     color: var(--clr3);
 }
 
@@ -230,6 +241,8 @@ span {
 }
 
 .search-box h1 {
+    /* font-family: "Merienda", cursive; */
+    font-family: "LXGW WenKai TC", cursive;
     font-size: 5.5rem;
     text-transform: capitalize;
     font-weight: 600;
@@ -237,6 +250,7 @@ span {
 }
 
 .search-box p {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1.8rem;
     margin: .5rem 0;
 }
@@ -247,6 +261,13 @@ span {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--clr2);
+}
+
+#search-btn{
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 60px;
 }
 
 @media(max-width:767px) {
@@ -290,7 +311,8 @@ footer {
     font-size: 3rem;
     color: #F3E5AB;
     padding: 1rem 0;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Merienda", cursive;
+    /* font-family: "Josefin Sans", sans-serif; */
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -303,6 +325,7 @@ footer {
     color: var(--clr3);
     padding: 1rem 0;
     display: block;
+    font-family: "LXGW WenKai TC", cursive;
 }
 
 /* .f-container a:hover {
@@ -335,7 +358,7 @@ footer {
 }
 
 .f-container .btn {
-    font-size: 18px;
+    font-size: 20px;
     background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient from blue to purple */
     color: white;
     border: none;
@@ -504,8 +527,9 @@ header.head {
 .logo {
   color: #f5a623;
   font-size: 12px;
-  font-weight: bold;
   text-decoration: none;
+  font-family: "LXGW WenKai TC", cursive;
+    font-style: normal;
 }
 
 .navbar {
@@ -516,7 +540,7 @@ header.head {
 .navbar a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px;
   transition: color 0.3s, background-color 0.3s;
 }

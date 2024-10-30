@@ -9,7 +9,11 @@ body {
 	font-family: Arial, sans-serif;
 	color: white;
 }
-
+.logo{
+	text-decoration: none;
+	font-family: "LXGW WenKai TC", cursive;
+	  font-style: normal;
+}
 header {
 	background: rgba(0, 0, 0, 0.7);
 	color: white;
@@ -21,6 +25,7 @@ header {
 
 h1 a,
 nav ul li a {
+	font-family: "Merienda", cursive;
 	color: white;
 	text-decoration: none;
 }
@@ -34,7 +39,9 @@ nav ul {
 nav ul li {
 	margin-left: 20px;
 }
-
+nav a{
+	font-family: "Merienda", cursive;
+}
 .wrapper {
 	margin-top: 100px;
 	padding: 40px;
@@ -53,9 +60,13 @@ nav ul li {
 	text-align: center;
 	margin-bottom: 30px;
 }
+.contact_us_header h2{
+	font-family: "LXGW WenKai TC", cursive;
+}
 
 .input_field {
 	margin-bottom: 20px;
+	color: black;
 }
 
 input[type="text"],
@@ -80,6 +91,10 @@ textarea {
 	height: 150px;
 }
 
+#message{
+	padding: 12px 20px;
+}
+
 .btn input[type="submit"] {
 	background-color: #007bff;
 	color: white;
@@ -88,7 +103,8 @@ textarea {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background 0.3s;
-	font-size: 16px;
+	font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
 }
 
 .btn input[type="submit"]:hover {
@@ -116,11 +132,13 @@ textarea {
 	font-size: 30px;
 	margin-bottom: 20px;
 	color: goldenrod;
+	font-family: "LXGW WenKai TC", cursive;
 }
 
 .newsletter-container p {
 	font-size: 18px;
 	margin-bottom: 15px;
+	font-family: "LXGW WenKai TC", cursive;
 }
 
 .newsletter-container input[type="email"] {

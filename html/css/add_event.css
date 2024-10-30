@@ -82,6 +82,7 @@ nav ul li a:hover {
 }
 
 .main-header {
+  margin-top: 20px;
   background: linear-gradient(135deg, #302b63, #0f0c29);
   border-radius: 15px;
   padding: 3rem;
@@ -92,6 +93,7 @@ nav ul li a:hover {
 }
 
 .main-title h1 {
+  font-family: "LXGW WenKai TC", cursive;
   margin-bottom: 1rem;
   font-size: 36px;
   color: #f1f1f1;
@@ -99,6 +101,8 @@ nav ul li a:hover {
 }
 
 .main-form {
+  font-family: "LXGW WenKai TC", cursive;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +121,8 @@ form select {
   border: 1px solid #dcdce6;
   border-radius: 6px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif; 
+  /* font-family: 'Roboto', sans-serif;  */
+  font-family: "Josefin Sans", sans-serif;
   color: #333;
   transition: border-color 0.3s;
 }
@@ -157,7 +162,9 @@ form textarea:focus {
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
-  font-family: 'Joan', serif; 
+  /* font-family: 'Joan', serif;  */
+  /* font-family: "LXGW WenKai TC", cursive; */
+  font-family: "Merienda", cursive;
   transition: background 0.3s, transform 0.2s;
 }
 
@@ -235,6 +242,7 @@ form textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
 }
 
 
@@ -258,6 +266,7 @@ form textarea:focus {
 }
 
 .head .navbar a {
+  font-family: "Merienda", cursive;
   padding-left: 1.5rem;
   color: var(--clr3);
 }
@@ -280,10 +289,12 @@ header.head {
 }
 
 .logo {
+  font-family: "LXGW WenKai TC", cursive;
   color: #f5a623;
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
+  letter-spacing: .1rem;
 }
 
 .navbar {

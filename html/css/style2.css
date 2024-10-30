@@ -47,20 +47,27 @@ body {
    bottom: 0;
    height: 130px;
    padding: 10px 15px;
-   font-family: Helvetica;
+   /* font-family: Helvetica; */
+   font-family: "Merienda", cursive;
+   /* font-family: "LXGW WenKai TC", cursive; */
  }
  
  .card-text {
    font-size: 14px;
    color: rgba(0, 0, 0, 0.7);
+   font-weight: 500;
+   
  }
  .card-title {
-   font-family: Serif;
+   /* font-family: Serif; */
+   font-family: "LXGW WenKai TC", cursive;
  }
  .card-author {
-   font-size: 14px;
-   color: #BAB096;
+   font-size: 15px;
+   color: #d6c225;
    transition: color 0.3s;
+   font-family: "LXGW WenKai TC", cursive;
+   font-weight: bold;
  }
  .card-author.selected {
    color: #6a6456;
