@@ -19,15 +19,6 @@
     align-items: center;
 }
 
-.vendor {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../photos/back-5.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -110,18 +101,6 @@ section h4 {
     transform: translateY(-1rem);
     transition: all .5s ease;
 } */
-
-.title {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: .2rem;
-}
-
-.title span {
-    color: var(--clr2);
-    font-size: 4rem;
-}
 
 .title p {
     font-size: 1.8rem;
@@ -262,6 +241,29 @@ span {
 /*-------------------services--------------*/
 
 /*----------------------vendor section------------*/
+
+.vendor {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../photos/back-5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+.title span {
+    color: var(--clr2);
+    font-size: 4rem;
+}
+
 
 /*--------------------------e-invitation section-----------*/
 
