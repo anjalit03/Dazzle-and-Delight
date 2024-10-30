@@ -132,7 +132,7 @@ git push origin my-feature-branch
 
 2. *Click "New Pull Request."*
 
-3. *Select your branch and provide a description of your changes.*
+3. *Select your branch and provide a description of your changes. Mention the issue number you are submitting the merge for in the description.*
 
 4. *Click "Create Pull Request."*
 
