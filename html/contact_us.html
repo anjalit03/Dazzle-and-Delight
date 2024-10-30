@@ -1,120 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Contact Us</title>
-		<link rel="icon" href="photos/logo.jpg" />
-		<link rel="stylesheet" href="css/contact_us.css" />
-		<link rel="stylesheet" href="css/navbar.css">
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css"
-		/>
-	</head>
-	<body>
-		<header class="head">
-			<a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
-			<nav class="navbar ">
-				<a href="index.html"  style="font-size: 20px;">Home</a>
-				<a href="events.html" style="font-size: 20px;">Events</a>
-				<a href="add_event.html" style="font-size: 20px;">New Event</a>
-				<a href="location.html" style="font-size: 20px;">Locations</a>
-				<a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
-				<a href="login.html" style="font-size: 20px;">Login</a>
-			</nav>
-			<div id="menu-bar"><i class="fas fa-bars"></i></div>
-		</header>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contact Us</title>
+	<link rel="icon" href="photos/logo.jpg" />
+	<link rel="stylesheet" href="css/contact_us.css" />
+	<link rel="stylesheet" href="css/navbar.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" />
+</head>
+<body>
+	<header class="head">
+		<a href="index.html" class="logo" style="font-size: 24px; color: goldenrod;">Dazzle and Delight</a>
+		<nav class="navbar">
+			<a href="index.html" style="font-size: 20px;">Home</a>
+			<a href="events.html" style="font-size: 20px;">Events</a>
+			<a href="add_event.html" style="font-size: 20px;">New Event</a>
+			<a href="location.html" style="font-size: 20px;">Locations</a>
+			<a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
+			<a href="login.html" style="font-size: 20px;">Login</a>
+		</nav>
+		<div id="menu-bar"><i class="fas fa-bars"></i></div>
+	</header>
 
-		<div class="wrapper glass-effect">
-			<div class="contact_us_header"><h2>Contact Us</h2></div>
-			<div id="error_message" class="error_message"></div>
-			<form action="" id="myform" onsubmit="return validate();">
-				<div class="input_field">
-					<input type="text" placeholder="Name" id="name" required />
-				</div>
-				<div class="input_field">
-					<input
-						type="text"
-						placeholder="Subject"
-						id="subject"
-						required
-					/>
-				</div>
-				<div class="input_field">
-					<input
-						type="text"
-						placeholder="Phone"
-						id="phone"
-						required
-					/>
-				</div>
-				<div class="input_field">
-					<input
-						type="email"
-						placeholder="Email"
-						id="email"
-						required
-					/>
-				</div>
-				<div class="input_field">
-					<textarea
-						placeholder="Message"
-						id="message"
-						required
-					></textarea>
-				</div>
-				<div class="btn">
-					<input type="submit" value="Submit" />
-				</div>
-			</form>
+	<div class="wrapper glass-effect">
+		<div class="contact_us_header"><h2>Contact Us</h2></div>
+		<div id="error_message" class="error_message"></div>
+		<form action="" id="myform" onsubmit="return validateContactForm();">
+			<div class="input_field">
+				<input type="text" placeholder="Name" id="name" required />
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Subject" id="subject" required />
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Phone" id="phone" required />
+			</div>
+			<div class="input_field">
+				<input type="email" placeholder="Email" id="email" required />
+			</div>
+			<div class="input_field">
+				<textarea placeholder="Message" id="message" required></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+	</div>
+
+	<div class="newsletter-container">
+		<h2>Subscribe for Latest Updates</h2>
+		<p>Enter your email to receive the latest updates:</p>
+		<div class="input_field">
+			<input type="email" id="subscribeEmail" placeholder="Enter your email" />
 		</div>
+		<div class="error-message" id="subscribeError">Please enter a valid email address.</div>
+		<button onclick="validateSubscription();">Subscribe</button>
+	</div>
 
-		<script>
-			function validate() {
-				var name = document.getElementById("name").value;
-				var subject = document.getElementById("subject").value;
-				var phone = document.getElementById("phone").value;
-				var email = document.getElementById("email").value;
-				var message = document.getElementById("message").value;
-				var error_message = document.getElementById("error_message");
+	<script>
+		function validateContactForm() {
+			var name = document.getElementById("name").value;
+			var subject = document.getElementById("subject").value;
+			var phone = document.getElementById("phone").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+			var error_message = document.getElementById("error_message");
 
-				error_message.style.padding = "10px";
-				var text;
+			error_message.style.padding = "10px";
+			var text;
 
-				if (name.length < 5) {
-					text = "Please Enter a valid Name (min 5 characters).";
-					error_message.innerHTML = text;
-					return false;
-				}
-				if (subject.length < 10) {
-					text =
-						"Please Enter a Correct Subject (min 10 characters).";
-					error_message.innerHTML = text;
-					return false;
-				}
-				if (isNaN(phone) || phone.length != 10) {
-					text = "Please Enter a valid Phone Number (10 digits).";
-					error_message.innerHTML = text;
-					return false;
-				}
-				if (
-					!email.match(
-						/^([A-z]{1})([A-z 0-9 _ .]{5,15})@([A-z]{5,10}).com$/
-					)
-				) {
-					text = "Please Enter a valid Email.";
-					error_message.innerHTML = text;
-					return false;
-				}
-				if (message.length <= 140) {
-					text = "Please Enter More Than 140 Characters in Message.";
-					error_message.innerHTML = text;
-					return false;
-				}
-				alert("Form Submitted Successfully!");
-				return true;
+			if (name.length < 5) {
+				text = "Please Enter a valid Name (min 5 characters).";
+				error_message.innerHTML = text;
+				return false;
 			}
-		</script>
-	</body>
+			if (subject.length < 10) {
+				text = "Please Enter a Correct Subject (min 10 characters).";
+				error_message.innerHTML = text;
+				return false;
+			}
+			if (isNaN(phone) || phone.length != 10) {
+				text = "Please Enter a valid Phone Number (10 digits).";
+				error_message.innerHTML = text;
+				return false;
+			}
+			if (!email.match(/^([A-z]{1})([A-z 0-9 _ .]{5,15})@([A-z]{5,10}).com$/)) {
+				text = "Please Enter a valid Email.";
+				error_message.innerHTML = text;
+				return false;
+			}
+			if (message.length <= 140) {
+				text = "Please Enter More Than 140 Characters in Message.";
+				error_message.innerHTML = text;
+				return false;
+			}
+			alert("Form Submitted Successfully!");
+			return true;
+		}
+
+		function validateSubscription() {
+			var subscribeEmail = document.getElementById("subscribeEmail").value;
+			var subscribeError = document.getElementById("subscribeError");
+
+			if (!subscribeEmail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {
+				subscribeError.style.display = "block";
+			} else {
+				subscribeError.style.display = "none";
+				alert("Thank you for subscribing!");
+			}
+		}
+	</script>
+</body>
 </html>
