@@ -210,3 +210,173 @@ form textarea:focus {
   width: 100px;
 }
 
+
+
+/* Header  */
+:root {
+  --clr1: #222;
+  --clr2: rgba(40, 57, 101, .9);
+  --clr3: #fff;
+  --clr4: #000;
+  --clr5: lightgray;
+  --clr6: yellow;
+}
+
+/*----------------------header section---------------*/
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--clr1);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.head .logo {
+  font-size: 2.5rem;
+  color: var(--clr3);
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+
+
+.head .navbar {
+  font-size: 1.8rem;
+
+  color: var(--color-white);
+  transition: var(--transition-standard);
+}
+
+.head .navbar a:hover {
+  color: var(--color-primary);
+}
+
+.head .navbar a {
+  padding-left: 1.5rem;
+  color: var(--clr3);
+}
+
+#menu-bar {
+  display: none;
+  color: var(--clr3);
+}
+
+
+/* Header Styling */
+header.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  /* position: relative; */
+}
+
+.logo {
+  color: #f5a623;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #333;
+  background-color: #f5a623;
+  border-radius: 4px;
+}
+
+/* Menu bar for mobile */
+#menu-bar {
+  display: none;
+  font-size: 24px;
+  color: #f5a623;
+  cursor: pointer;
+}
+
+@media(max-width:991px) {
+  html {
+      font-size: 55%;
+  }
+
+  .head {
+      padding: 3rem;
+  }
+
+  #menu-bar {
+      display: inline-block;
+      font-size: 2rem;
+      position: relative;
+      right: 63px;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--clr2);
+      clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  }
+
+  .head .navbar.active {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .navbar a {
+      display: block;
+      margin: 2rem;
+  }
+
+}
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+  }
+
+  .navbar a {
+      padding: 12px;
+      text-align: center;
+      width: 100%;
+  }
+
+  #menu-bar {
+      display: block;
+      position: relative;
+      right: 63px;
+  }
+
+  .navbar.show {
+      display: flex;
+  }
+
+}
+
+
+
