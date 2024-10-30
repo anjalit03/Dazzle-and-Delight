@@ -1,106 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dazzle and Delight</title>
-    <link rel="icon" href="photos/logo.jpg">
-    <link rel="stylesheet" href="./css/contact_us.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contact Us</title>
+	<link rel="icon" href="photos/logo.jpg" />
+	<link rel="stylesheet" href="css/contact_us.css" />
+	<link rel="stylesheet" href="css/navbar.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-container">
-            <a href="#" class="logo">Dazzle And Delight</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./events.html">Events</a></li>
-                    <li><a href="./add_event.html">New Event</a></li>
-                    <li><a href="./location.html">Locations</a></li>
-                    <li><a href="./contact_us.html">Contact Us</a></li>
-                    <li><a href="./login.html" class="login-btn">Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    
-    <main>        
-        <section class="team-section">
-            <h2 class="team-title">The Faces Behind the Fashion.<br>Our Creative Collective</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f7320014349c6726e3bc75_Team09.jpg" alt="Darrell Steward" class="member-photo">
-                    <h3 class="member-name">Darrell Steward</h3>
-                    <p class="member-role">Creative Director</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f731e90dae882302bc8527_Team06.jpg" alt="Cody Fisher" class="member-photo">
-                    <h3 class="member-name">Cody Fisher</h3>
-                    <p class="member-role">Event Planner</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f731ddd9b59ceb6cb399f5_Team03.jpg" alt="Savannah Nguyen" class="member-photo">
-                    <h3 class="member-name">Savannah Fox</h3>
-                    <p class="member-role">Social Media Manager</p>
-                </div>
+	<header class="head">
+		<a href="index.html" class="logo" style="font-size: 24px; color: goldenrod;">Dazzle And Delight</a>
+		<nav class="navbar">
+			<a href="index.html" style="font-size: 20px;">Home</a>
+			<a href="events.html" style="font-size: 20px;">Events</a>
+			<a href="add_event.html" style="font-size: 20px;">New Event</a>
+			<a href="location.html" style="font-size: 20px;">Locations</a>
+			<a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
+			<a href="login.html" style="font-size: 20px;">Login</a>
+		</nav>
+		<div id="menu-bar"><i class="fas fa-bars"></i></div>
+	</header>
 
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f731cad9b59c3000b39995_Team08.jpg" alt="Darrell Steward" class="member-photo">
-                    <h3 class="member-name">Robert Fox</h3>
-                    <p class="member-role">Web Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f7318fd9b59c3aacb39978_Team07.jpg" alt="Cody Fisher" class="member-photo">
-                    <h3 class="member-name">Devon Lane</h3>
-                    <p class="member-role">Brand Strategist</p>
-                </div>
-                <div class="team-member">
-                    <img src="https://assets.website-files.com/60f70676c05ee304db14a14d/60f7314d45fc32ecc4e3b702_Team01.jpg" alt="Savannah Nguyen" class="member-photo">
-                    <h3 class="member-name">Floyd Miles</h3>
-                    <p class="member-role">Business Intelligence</p>
-                </div>
-            </div>
-        </section>
+	<div class="wrapper glass-effect">
+		<div class="contact_us_header"><h2>Contact Us</h2></div>
+		<div id="error_message" class="error_message"></div>
+		<form action="" id="myform" onsubmit="return validateContactForm();">
+			<div class="input_field">
+				<input type="text" placeholder="Name" id="name" required />
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Subject" id="subject" required />
+			</div>
+			<div class="input_field">
+				<input type="text" placeholder="Phone" id="phone" required />
+			</div>
+			<div class="input_field">
+				<input type="email" placeholder="Email" id="email" required />
+			</div>
+			<div class="input_field">
+				<textarea placeholder="Message" id="message" required></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+	</div>
 
-        <div class="news">
-            <h2 class="title">The best deals delivered to your inbox</h2>
-            <p class="subtitle">One email per week.</p>
-            <div class="form-container">
-              <input type="text" class="input-field name" placeholder="Name">
-              <input type="email" class="input-field email" placeholder="Email">
-            </div>
-            <button class="subscribe-button">Subscribe</button>
-          </div>
-        
-        <section class="team-section qs">
-            <h2 class="team-title">Frequently Asked<br>Questions</h2>
-
-            <div class="faq">
-                <div class="question">
-                    <h3>Is it free to use Dazzle and Delight?</h3>
-                    
-                </div>
-                <div class="answer">
-                    <p>
-                        Browsing and account creation are free - you only pay for event tickets you purchase.    
-                    </p>
-                </div>
-            </div>
-
-            <div class="faq">
-                <div class="question">
-                    <h3>Can I get a refund if I can't attend?</h3>
-                    
-                </div>
-                <div class="answer">
-                    <p>
-                        Refund policies vary by event - full refund 7+ days before, partial refund 3-7 days before, no refund within 72 hours.    
-                    </p>
-                </div>
-            </div>
+	<div class="newsletter-container">
+		<h2>Subscribe for Latest Updates</h2>
+		<p>Enter your email to receive the latest updates:</p>
+		<div class="input_field">
+			<input type="email" id="subscribeEmail" placeholder="Enter your email" />
+		</div>
+		<div class="error-message" id="subscribeError">Please enter a valid email address.</div>
+		<div class="btn"><button onclick="validateSubscription();"  >Subscribe</button></div>
+		
+	</div>
 
             <div class="faq">
                 <div class="question">
