@@ -60,7 +60,11 @@ body {
     align-items: center;
     text-align: center;
     padding: 80px 5%;
-    background: linear-gradient(to bottom right, #4a148c, #6a1b9a);
+    background-image: url('../photos/EventImg.jpeg');
+    background-size: cover; 
+    background-position: center;
+    height: 400px; /* Set the height based on your design */
+    width: 100%; /* Full-width for banners */
     color: #fff;
 }
 
@@ -87,6 +91,7 @@ body {
     background: #f3e5f5;
     color: #6a1b9a;
 }
+
 
 .btn {
     padding: 10px 20px;

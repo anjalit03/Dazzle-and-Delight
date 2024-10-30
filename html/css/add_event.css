@@ -7,7 +7,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; 
-  background: linear-gradient(to right, #283048, #859398);
+  background: linear-gradient(to right, #283048, #859398), url("../photos/back-3.jpg");
   color: #333;
   display: flex;
   align-items: center;
@@ -78,7 +78,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 100px;
+  padding: 100px;
 }
 
 .main-header {
@@ -165,3 +165,48 @@ form textarea:focus {
   background: #283048;
   transform: scale(1.05);
 }
+
+.event-label-textarea{
+  display: flex;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.event-label-textarea > input{
+  width: 70%;
+}
+
+.event-label-textarea > label{
+  width: 20%;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.event-time {
+  display: flex;
+  gap: 10px;
+}
+
+.event-time .event-label-textarea{
+  width: 70%;
+}
+
+.event-time .event-label-textarea label{
+  width: 40%;
+}
+
+.event-time .event-label-textarea input{
+  width: 40%;
+}
+
+.event-label-textarea-check{
+  display: flex;
+  gap: 0px;
+  margin-right: auto;
+  width: 20%;
+}
+
+.event-label-textarea-check label{
+  width: 100px;
+}
+

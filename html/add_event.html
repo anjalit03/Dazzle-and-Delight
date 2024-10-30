@@ -30,24 +30,41 @@
         </div>
         <div class="main-form">
           <form id="event">
-            <input type="text" name="ftitle" placeholder="Add title">
-            <input type="text" name="fdescription" placeholder="Add description">
-            <input type="text" name="flocation" placeholder="Add location">
+            <div class="event-label-textarea">
+              <label for="Title">Title : </label>
+              <input type="text" name="ftitle" placeholder="Add title">
+            </div>
 
-            <div class="input-group">
-              <input type="date" name="fdate" id="dateF">
-              <label for="fallday" class="all_day">All day:</label>
+            <div class="event-label-textarea">
+              <label for="Description">Description : </label>
+              <input type="text" name="fdescription" placeholder="Add Description">
+            </div>
+            <div class="event-label-textarea">
+              <label for="Location">Location : </label>
+              <input type="text" name="flocation" placeholder="Add location">
+            </div>
+
+              <div class="event-label-textarea">
+                <label for="Date">Date : </label>
+                <input type="date" name="fdate" id="dateF">
+              </div>     
+
+            <div class="event-time">
+                <div class="event-label-textarea">
+                  <label for="fstart">Start Time:</label>
+                  <input type="time" name="fstart" class="hour">
+                </div>
+                <div class="event-label-textarea">
+                  <label for="fend">End Time:</label>
+                  <input type="time" name="fend" class="hour">
+                </div>
+            </div>
+            
+            <div class="event-label-textarea-check">
               <input type="checkbox" class="checkbox" name="fallday">
+              <label for="fallday" class="all_day">All day</label>
             </div>
 
-            <div class="input-hour">
-              <div id="fhourdiv">
-                <label for="fstart">Start Time:</label>
-                <input type="time" name="fstart" class="hour">
-                <label for="fend">End Time:</label>
-                <input type="time" name="fend" class="hour">
-              </div>
-            </div>
             <input type="submit" onclick="check()" id="fsubmit" value="Save" class="button">
           </form>
         </div>

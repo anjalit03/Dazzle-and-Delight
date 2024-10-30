@@ -119,7 +119,7 @@ img {
 /* main container */
 
 .main-container {
-    color: #adadad;
+    color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2rem;
@@ -160,7 +160,16 @@ input[type=radio]:checked {
 label {
     margin-left: .5rem;
 }
+label:hover{ 
+    text-decoration: underline;
+}
 
+input[type="checkbox"]:checked + label { 
+    font-weight: bold;
+}
+input[type="radio"]:checked + label { 
+    font-weight: bold;
+}
 
 /* movies container */
 

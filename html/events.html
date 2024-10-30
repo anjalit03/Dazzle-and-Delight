@@ -8,55 +8,55 @@
     <link rel="stylesheet" href="css/event.css">
     <title>Dazzle and Delight</title>
     <link rel="icon" href="photos/logo.jpg">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
-    <section class="top-bar">
-        <div class="left-content">
-            <h2 class="title"><a href="index.html">Dazzle and Delight</a></h2>
-            <ul class="navigation">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="add_event.html">New Event</a></li>
-              <li><a href="location.html">Locations</a></li>
-              <li><a href="contact_us.html">Contact Us</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </section>
+    <header class="head">
+        <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
+        <nav class="navbar ">
+            <a href="index.html"  style="font-size: 20px;">Home</a>
+            <a href="events.html" style="font-size: 20px;">Events</a>
+            <a href="add_event.html" style="font-size: 20px;">New Event</a>
+            <a href="location.html" style="font-size: 20px;">Locations</a>
+            <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
+            <a href="login.html" style="font-size: 20px;">Login</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
 
     <section class="main-container">
         <div class="sidebar">
             <form action="#">
                 <div class="sidebar-groups">
                     <h3 class="sg-title">Categories</h3>
-                    <input type="checkbox" id="adventure" name="adventure" value="adventure">
-                    <label for="adventure">Theatre and Art</label><br>
-                    <input type="checkbox" id="action" name="action" value="action">
-                    <label for="action">Pocket Friendly</label><br>
-                    <input type="checkbox" id="animation" name="animation" value="animation">
-                    <label for="animation">Music</label><br>
+                    <input type="checkbox" id="theatreAndArt" name="theatreAndArt" value="theatreAndArt">
+                    <label for="theatreAndArt">Theatre and Art</label><br>
+                    <input type="checkbox" id="pocketFriendly" name="pocketFriendly" value="pocketFriendly">
+                    <label for="pocketFriendly">Pocket Friendly</label><br>
+                    <input type="checkbox" id="music" name="music" value="music">
+                    <label for="music">Music</label><br>
                     <input type="checkbox" id="comedy" name="comedy" value="comedy">
                     <label for="comedy">Comedy</label><br>
-                    <input type="checkbox" id="science" name="science" value="science">
-                    <label for="science">Courses</label><br>
-                    <input type="checkbox" id="thriller" name="thriller" value="thriller">
-                    <label for="thriller">Workshop</label><br>
+                    <input type="checkbox" id="courses" name="courses" value="courses">
+                    <label for="courses">Courses</label><br>
+                    <input type="checkbox" id="workshop" name="workshop" value="workshop">
+                    <label for="workshop">Workshop</label><br>
                     <input type="checkbox" id="history" name="history" value="history">
                     <label for="history">History</label><br>
                     <input type="checkbox" id="documentary" name="documentary" value="documentary">
                     <label for="documentary">Documentary</label><br>
-                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
-                    <label for="fantasy">Cultural</label><br>
-                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
-                    <label for="fantasy">Games and Quizzes</label><br>
+                    <input type="checkbox" id="cultural" name="cultural" value="cultural">
+                    <label for="cultural">Cultural</label><br>
+                    <input type="checkbox" id="game" name="game" value="game">
+                    <label for="game">Games and Quizzes</label><br>
                 </div>
                 <div class="sidebar-groups">
                     <h3 class="sg-title">Ticket Type</h3>
-                    <input type="checkbox" id="english" name="english" value="english">
-                    <label for="english">Free</label><br>
-                    <input type="checkbox" id="spanish" name="spanish" value="spanish">
-                    <label for="spanish">Paid</label><br>
+                    <input type="checkbox" id="free" name="free" value="free">
+                    <label for="free">Free</label><br>
+                    <input type="checkbox" id="paid" name="paid" value="paid">
+                    <label for="paid">Paid</label><br>
                 </div>
                 <div class="sidebar-groups">
                     <h3 class="sg-title">Time</h3>
@@ -182,5 +182,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html> 
