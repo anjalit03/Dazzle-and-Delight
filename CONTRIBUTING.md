@@ -12,12 +12,12 @@ Thank you for your interest in contributing to this project! Your help is greatl
 
 ## How to Contribute
 
-
+First, please star ⭐ the repository 😄
 
 
 ### 1. Feature Requests
 
-We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits.
+We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits. Please make sure to check already created issues to avoid duplicacy.
 
 
 
@@ -141,6 +141,6 @@ git push origin my-feature-branch
 
 ## Waiting for Review 
 
-*A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes.*
+*A project maintainer will review your pull request. Be open to feedback, and feel free to ask questions or discuss any requested changes. Please wait patiently for a maintainer to review the changes, don't send multiple messages.*
 
 ---
