@@ -302,3 +302,6 @@ footer h2 {
     }
 }
 
+.flatpickr-months .flatpickr-month {
+    height: 50px !important; /* Forces height if other styles are overriding it */
+}
