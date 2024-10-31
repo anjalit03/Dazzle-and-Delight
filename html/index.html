@@ -11,6 +11,9 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -60,9 +63,9 @@
         </form>
     </section>
 
-    <!-- Featured Events Section -->
-    <section class="events">
-        <main class="events-main">
+    <!-- Events Section -->
+    <div class="events">
+        <main class="cd__main">
             <div id="app">
                 <h1 class="Featured"><span>Featured</span> Events</h1>
                 <div class="card-row">
@@ -108,7 +111,7 @@
         <script src="js/script.js"></script>
     </section>
 
-    <!------------------E-invitation------------------>
+    <!-- E-Invitation Section -->
     <section class="container css-y40yff">
         <div class="right-div css-7x2xv2">
             <img src="photos/image1.png" class="css-hd5bpz">
@@ -124,7 +127,6 @@
 
     <!-- Footer Section -->
     <footer id="contact">
-        <div class="container">
             <div class="footer-content">
                 <h2>Dazzle and Delight</h2>
                 <p>Your one-stop platform to discover the best events, travel experiences, and culinary delights in your city. We curate memorable experiences that are worth your time.</p>
@@ -137,27 +139,44 @@
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
             </div>
-            <div class="footer-content">
-                <h2>Our Locations</h2>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Anand</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Vadodara</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Mumbai</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Ahmedabad</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Surat</li>
-                </ul>
+            <div class="f-container">
+                <h2>Our Location</h2>
+                <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Ahmedabad</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Surat</a>
             </div>
-            <div class="footer-content">
-                <h2>Newsletter</h2>
-                <p>Subscribe for the latest updates.</p>
-                <input type="email" placeholder="Enter Your Email" required>
-                <button class="btn">Subscribe</button>
+
+            <div class="f-container">
+                <h2>Our Newsletter</h2>
+                <p>Subscribe for latest updates</p>
+                <input type="text" id="email-input" placeholder="Enter Your Email">
+                <button class="btn" onclick="validateEmail()">Subscribe</button>
+                <p id="subscribe-message" style="display: none; color: white; margin-top: 10px;">Thank you for subscribing!</p>
             </div>
         </div>
         <div class="copyright">
             <p>&copy; 2024 Designed by Anjali Thakur</p>
         </div>
     </footer>
+
+    <div class="copyright">
+        <p>Designed By Anjali Thakur :)</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function validateEmail() {
+            const emailInput = document.getElementById('email-input').value;
+            const subscribeMessage = document.getElementById('subscribe-message');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailPattern.test(emailInput)) {
+                subscribeMessage.style.display = 'block';
+            } else {
+                alert('Please enter a valid email address.');
+                subscribeMessage.style.display = 'none';
 
     <!-- JavaScript for Navbar Toggle -->
     <script>
