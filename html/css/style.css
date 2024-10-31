@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-
+/* font-family: "LXGW WenKai TC", cursive;
+font-family: "Merienda", cursive; */
 :root {
     /* Colors */
     --color-primary: #283965;
@@ -91,6 +92,7 @@ section h4 {
 }
 
 .btn {
+    font-family: "Josefin Sans", sans-serif;
     margin-top: 2rem;
     padding: 1.3rem 4rem;
     font-size: 1.5rem;
@@ -108,10 +110,56 @@ section h4 {
   
   .btn:hover {
     transform: translateY(-1rem);
-  }
-  
-  /* Header Styles */
-  .head {
+    transition: all .5s ease;
+} */
+
+.title {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+.title span {
+    color: var(--clr2);
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+}
+
+.title h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--clr4);
+    font-family: "Merienda", cursive;
+    
+}
+
+.title1 {
+
+    text-align: center;
+    /* font-family: sans-serif; */
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    
+}
+
+.title1 span {
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    
+}
+
+.title1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Merienda", cursive;
+}
+
+/*----------------------header section---------------*/
+
+.head {
     position: fixed;
     top: 0;
     left: 0;
@@ -156,7 +204,27 @@ section h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("back-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("back-1.jpg");
+
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.head .navbar a {
+    font-family: "Merienda", cursive;
+    padding-left: 1.7rem;
+    color: var(--clr3);
+}
+
+#menu-bar {
+    display: none;
+    color: var(--clr3);
+}
+
+/*----------------------Home-------------*/
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../photos/back-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,6 +240,8 @@ section h4 {
 }
 
 .search-box h1 {
+    /* font-family: "Merienda", cursive; */
+    font-family: "LXGW WenKai TC", cursive;
     font-size: 5.5rem;
     text-transform: capitalize;
     font-weight: 600;
@@ -179,6 +249,7 @@ section h4 {
 }
 
 .search-box p {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1.8rem;
     margin: .5rem 0;
 }
@@ -188,65 +259,122 @@ section h4 {
     height: 4.5rem;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-primary);
-    border: none;
-    border-radius: 0.4rem;
-  }
-  
-  /* Section Styles */
-  section {
-    padding: var(--spacing-xl) 9%;
-    margin-top: var(--spacing-xl);
-  }
-  
-  section h3 {
-    font-size: 3rem;
-    color: var(--color-primary-alpha);
-    text-transform: none;
-    text-align: center;
-    letter-spacing: 0.2rem;
-  }
-  
-  section p {
-    color: var(--color-white);
-    font-size: 1.5rem;
-    line-height: 2.5;
-  }
-  
-  /* Footer Styles */
-  .footer {
-    background-color: var(--color-primary);
-    padding: var(--spacing-xl) 5%;
-  }
-  
-  .footer-grid {
+    color: var(--clr2);
+}
+
+#search-btn{
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 60px;
+}
+
+@media(max-width:767px) {
+    .search-box h1 {
+        font-size: 4rem;
+    }
+
+    .search-field {
+        width: 15rem;
+    }
+}
+
+/*-------------------services--------------*/
+
+/*----------------------vendor section------------*/
+
+/*--------------------------e-invitation section-----------*/
+
+/*linked to another file test.css*/
+
+/*---------------------------footer section-------------*/
+
+footer {
+    height: 70vh;
+    padding: 10px 10px;
+}
+
+#contact {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 16%, rgba(48, 61, 155, 1) 77%, rgba(9, 14, 34, 1) 99%);
+}
+
+.container {
+    padding: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
-  }
-  
-  .f-container h2 {
-    font-size: 2.5rem;
-    color: var(--color-white);
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .f-container a {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 4rem;
+}
+
+.f-container h2 {
+    font-size: 3rem;
+    color: #F3E5AB;
+    padding: 1rem 0;
+    font-family: "Merienda", cursive;
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.f-container a {
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--clr3);
     padding: 1rem 0;
     display: block;
-    padding: var(--spacing-xs) 0;
-    transition: var(--transition-standard);
-  }
-  
-  .f-container a:hover {
-    transform: translateX(0.5rem);
-  }
-  
-  .social-icons {
+    font-family: "LXGW WenKai TC", cursive;
+}
+
+/* .f-container a:hover {
+    transform: translateX(.5rem);
+    transition: .5s ease;
+} */
+
+.f-container i {
+    padding-right: .5rem;
+    color: var(--clr1);
+}
+
+.f-container p {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAF9F6;
+    font-size: 20px;
+}
+
+.f-container p p1 {
+    width: 10vw;
+}
+
+.f-container input {
+    width: 90%;
+    padding: 1rem;
+    background: #eee;
+    border: .2rem solid var(--clr1);
+}
+
+.f-container .btn {
+    font-size: 20px;
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient from blue to purple */
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    transition: transform 0.2s ease;
+}
+.f-container .btn:active {
+    transform: scale(0.98); /* Slightly shrinks button */
+    background-color: #1c5985; /* Darkens further */
+}
+.f-container .btn:hover {
+    background: linear-gradient(135deg, #2980b9, #713b8c);
+    transform: scale(1.05);
+}
+.f-container .social{
     display: flex;
     gap: var(--spacing-sm);
     margin-top: var(--spacing-sm);
@@ -312,3 +440,93 @@ section h4 {
     html { font-size: 50%; }
     .head { padding: var(--spacing-md); }
   }
+/* General Reset */
+
+/* Header Styling */
+header.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  color: #f5a623;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "LXGW WenKai TC", cursive;
+    font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #333;
+  background-color: #f5a623;
+  border-radius: 4px;
+}
+
+/* Menu bar for mobile */
+#menu-bar {
+  display: none;
+  font-size: 24px;
+  color: #f5a623;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+  }
+
+  .navbar a {
+      padding: 12px;
+      text-align: center;
+      width: 100%;
+  }
+
+  #menu-bar {
+      display: block;
+  }
+
+  .navbar.show {
+      display: flex;
+  }
+  
+    .home .inner-content-img img {
+        width: 35rem;
+        align-items: center;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .head {
+        padding: 3rem;
+    }
+}
