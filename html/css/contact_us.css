@@ -33,9 +33,6 @@ body {
     justify-content: center!important;
 }
 
-.navbar {
-    display: none!important;
-}
 
 .content h1 {
     text-align: center!important;
@@ -593,25 +590,15 @@ svg {
     width: 100%;
   }
 
-/*header*/
-.site-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
 
-.header-container {
+/* .header-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .logo {
     font-weight: bold;
@@ -619,8 +606,112 @@ svg {
     font-size: 24px;
     color: goldenrod;
 }
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("back-1.jpg");
 
-.main-nav ul {
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.head .navbar a {
+    font-family: "Merienda", cursive;
+    padding-left: 1.7rem;
+    color: var(--clr3);
+}
+
+#menu-bar {
+    display: none;
+    color: var(--clr3);
+}
+
+
+/*----------------------header section---------------*/
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head .logo {
+    font-size: 2.5rem;
+    color: var(--clr3);
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.head .navbar {
+    font-size: 1.8rem;
+
+    color: var(--color-white);
+    transition: var(--transition-standard);
+  }
+  
+  .head .navbar a:hover {
+    color: var(--color-primary);
+  }
+  
+
+  /* Header Styling */
+header.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+  }
+  
+  .logo {
+    color: #f5a623;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: "LXGW WenKai TC", cursive;
+      font-style: normal;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    color: #333;
+    background-color: #f5a623;
+    border-radius: 4px;
+  }
+  
+  /* Menu bar for mobile */
+  #menu-bar {
+    display: none;
+    font-size: 24px;
+    color: #f5a623;
+    cursor: pointer;
+  }
+
+  
+/* .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -640,7 +731,7 @@ svg {
 
 .main-nav a:hover {
     color: #f0c79f;
-}
+} */
 
 .login-btn {
     background-color: #f0c79f;
