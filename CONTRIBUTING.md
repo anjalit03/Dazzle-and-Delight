@@ -17,7 +17,7 @@ First, please star ⭐ the repository 😄
 
 ### 1. Feature Requests
 
-We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits. Please make sure to check already created issues to avoid duplicacy.
+We love hearing your ideas! If you have a feature request, please create a new issue and describe the feature you would like to see, including its potential benefits. Please make sure to check already created issues to avoid duplicacy and only ask for unassigned issues. 
 
 
 
