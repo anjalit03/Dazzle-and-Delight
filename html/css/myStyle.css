@@ -262,6 +262,45 @@ footer h2 {
     color: #d1c4e9;
 }
 
+.f-container:not(:last-child) {
+    margin-right: 30px;
+}
+
+.f-container .location-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-list a {
+    color: #e1bee7;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.location-list a:hover {
+    color: #d1c4e9;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#email-input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#email-input:focus {
+    border-color: #8e24aa;
+}
+
 .social i {
     font-size: 1.5em;
     margin: 0 10px;
