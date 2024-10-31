@@ -93,7 +93,7 @@ section h4 {
 
 .title {
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Merienda", cursive;
     font-size: 2.5rem;
     letter-spacing: .2rem;
 }
@@ -116,6 +116,7 @@ section h4 {
 /*----------------------header section---------------*/
 
 .head {
+    /* font-family: "LXGW WenKai TC", cursive; */
     position: fixed;
     top: 0;
     left: 0;
@@ -129,6 +130,7 @@ section h4 {
 }
 
 .head .logo {
+    font-family: "LXGW WenKai TC", cursive;
     font-size: 2.5rem;
     color: var(--clr3);
     font-weight: 600;
@@ -147,6 +149,7 @@ span {
 }
 
 .head .navbar a {
+    font-family: "Merienda", cursive;
     padding-left: 1.5rem;
     color: var(--clr3);
 }

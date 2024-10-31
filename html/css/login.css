@@ -3,17 +3,18 @@
 
 * {
 	box-sizing: border-box;
-	font-family: 'Joan', serif;
+	/* font-family: 'Joan', serif; */
+	margin: 0;
 }
 
 body {
 	background: #222;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
+	align-items: center; */
+	/* flex-direction: column; */
+	/* font-family: 'Montserrat', sans-serif; */
+	/* height: 100vh; */
 }
 
 h1 {
@@ -55,6 +56,7 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	font-family: "LXGW WenKai TC", cursive;
 }
 
 button:active {
@@ -68,6 +70,7 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+	
 }
 
 form {
@@ -79,6 +82,7 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	font-family: "Merienda", cursive;
 }
 
 input {
@@ -99,6 +103,8 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	margin: auto;
+    margin-top: 50px;
 }
 
 .form-container {
@@ -106,6 +112,7 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	
 }
 
 .sign-in-container {
@@ -113,6 +120,7 @@ input {
 	width: 50%;
 	z-index: 2;
 	color: #fff;
+	font-family: "Merienda", cursive;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -149,6 +157,7 @@ input {
 }
 
 .overlay-container {
+	font-family: "Merienda", cursive;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -241,6 +250,7 @@ footer {
 }
 
 footer p {
+	font-family: "LXGW WenKai TC", cursive;
 	margin: 10px 0;
 }
 
@@ -262,7 +272,7 @@ h1 {
 	color: #fff;
 }
 
-nav {
+/* nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -292,9 +302,9 @@ nav ul a, nav h1 a {
 
 nav ul a:hover {
 	color: yellow;
-}
+} */
 
-header {
+/* header {
 	height: 10vh;
 	background-color: #222;
 	color: #fff;
@@ -305,7 +315,7 @@ header {
 	right: 0;
 	text-align: center;
 	z-index: 999;
-}
+} */
 
 .sign-in-container h1, .sign-up-container h1 {
 	margin-bottom: 10px;
@@ -334,9 +344,96 @@ header {
 }
 
 .overlay-right button, .overlay-left button {
+	font-family: "LXGW WenKai TC", cursive;
     cursor: pointer;
 }
 
 .overlay-right button:hover, .overlay-left button:hover {
     border: 2px solid #fff;
 }
+/*----------------------header section---------------*/
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	/* height: 0px; */
+}
+.head .logo {
+    font-size: 2.5rem;
+    color: var(--clr3);
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.head .navbar {
+    font-size: 1.8rem;
+
+    color: var(--color-white);
+    transition: var(--transition-standard);
+  }
+  
+  .head .navbar a:hover {
+    color: var(--color-primary);
+  }
+
+
+
+/* Header Styling */
+header.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  height: 70px;
+}
+
+.logo {
+  color: #f5a623;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "LXGW WenKai TC", cursive;
+    font-style: normal;
+}
+
+/* .navbar{
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+} */
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s;
+  font-family: "Merienda", cursive;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #333;
+  background-color: #f5a623;
+  border-radius: 4px;
+}
+
+/* Menu bar for mobile */
+#menu-bar {
+  display: none;
+  font-size: 24px;
+  color: #f5a623;
+  cursor: pointer;
+}
+
+

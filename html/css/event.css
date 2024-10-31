@@ -31,12 +31,15 @@ a {
 
 body {
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    display: grid;
-    grid-template-columns: 1000px;
+    /* display: grid; */
+    /* grid-template-columns: 1000px; */
     justify-content: space-evenly;
 }
 
-
+.head .navbar a{
+    font-family: "Merienda", cursive;
+    padding-left: 1.7rem;
+}
 /* top bar */
 
 .top-bar {
@@ -112,10 +115,17 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
-
+.logo {
+    color: #f5a623;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: "LXGW WenKai TC", cursive;
+      font-style: normal;
+      letter-spacing: .1rem;
+  }
 /* main container */
 
 .main-container {
@@ -123,6 +133,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2rem;
+    margin: 50px 50px;
+
 }
 
 
@@ -175,11 +187,12 @@ input[type="radio"]:checked + label {
 
 .upcoming-img-box {
     position: relative;
-    height: 300px;
+    height: 400px;
     width: 100%;
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
+
 }
 
 .upcoming-title {
@@ -233,7 +246,7 @@ input[type="radio"]:checked + label {
 
 .cm-img-box {
     position: relative;
-    height: 150px;
+    height: 200px;
     width: auto;
     margin-bottom: 1rem;
     border-radius: .5rem;

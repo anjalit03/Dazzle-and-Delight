@@ -5,7 +5,8 @@
 }
 
 .css-1dcidbk{
-    font-family: 'Joan', serif;
+    /* font-family: 'Joan', serif; */
+    font-family: "LXGW WenKai TC", cursive;
     color: #fff;
 }
 
@@ -107,7 +108,6 @@ div {
 
 .css-1dcidbk {
     font-size: 28px;
-    font-family: korolev-condensed, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -127,7 +127,10 @@ h3 {
 }
 
 .css-eagu6t {
-    font-size: 16px;
+    font-family: "Merienda", cursive;
+    text-align: center;
+    color:gold;
+    font-size: 20px;
     margin-top: 30px;
 }
 
@@ -145,6 +148,8 @@ p {
 }
 
 .css-pwlugj {
-    font-size: 13px;
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size: 16px;
     margin-top: 9px;
 }
