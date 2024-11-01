@@ -7,21 +7,23 @@
     <title>Dazzle and Delight</title>
     <link rel="icon" href="photos/logo.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body>
+
+    <!-- Header Section -->
     <header class="head">
-        <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
+        <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle And Delight</a>
         <nav class="navbar ">
             <a href="index.html" style="font-size: 20px;">Home</a>
             <a href="events.html" style="font-size: 20px;">Events</a>
             <a href="add_event.html" style="font-size: 20px;">New Event</a>
             <a href="location.html" style="font-size: 20px;">Locations</a>
-            <a href="about_us.html" style="font-size: 20px;">About Us</a>
             <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
+            <a href="about_us.html" style="font-size: 20px;">About Us</a>
             <a href="login.html" style="font-size: 20px;">Login</a>
         </nav>
         <div id="menu-bar"><i class="fas fa-bars"></i></div>
@@ -50,14 +52,14 @@
                     <option>Jaipur</option>
                     <option>Goa</option>
                 </select>
-                <button class="btn" id="search-btn">Search</button>
+                <button class="btn">Search</button>
             </div>
         </form>
     </section>
 
-    <!-- Events Section -->
-    <div class="events">
-        <main class="cd__main">
+    <!-- Featured Events Section -->
+    <section class="events">
+        <main class="events-main">
             <div id="app">
                 <h1 class="Featured"><span>Featured</span> Events</h1>
                 <div class="card-row">
@@ -82,7 +84,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="js/slide.js"></script>
     </section>
-  
+
     <!-- Upcoming Events Section -->
     <section class="vendor" id="vendor">
         <div class="title">
@@ -104,21 +106,22 @@
     </section>
 
     <!-- E-Invitation Section -->
-    <section class="container css-y40yff">
-        <div class="right-div css-7x2xv2">
-            <img src="photos/image1.png" class="css-hd5bpz">
-        </div>
-        <div class="left-div css-jbfrby">
-            <h3 class="css-1dcidbk">HIT PAUSE ON BOREDOM</h3>
-            <p class="css-eagu6t">Kickstart your resolution to party hard. Experience LIVE music, comedy, poetry,
-                theatre, sports &amp; so much more....</p>
-            <p class="css-pwlugj">Watch and cheer for your favourite teams, Discover new hobbies with workshops &amp;
-                courses And Groove to the beats of your favourite artists.</p>
+    <section class="e-invitation">
+        <div class="content">
+            <div class="image">
+                <img src="photos/image1.png" alt="Event Promotion Image">
+            </div>
+            <div class="text">
+                <h3>HIT PAUSE ON BOREDOM</h3>
+                <p>Kickstart your resolution to party hard. Experience LIVE music, comedy, poetry, theatre, sports &amp; much more.</p>
+                <p>Watch and cheer for your favorite teams, discover new hobbies, and groove to the beats of your favorite artists.</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer id="contact">
+        <div class="container">
             <div class="footer-content">
                 <h2>Dazzle and Delight</h2>
                 <p>Your one-stop platform to discover the best events, travel experiences, and culinary delights in your city. We curate memorable experiences that are worth your time.</p>
@@ -131,15 +134,16 @@
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
             </div>
-            <div class="f-container">
-                <h2>Our Location</h2>
-                <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
-                <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
-                <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
-                <a href="#"><i class="fas fa-angle-right"></i>Ahmedabad</a>
-                <a href="#"><i class="fas fa-angle-right"></i>Surat</a>
+            <div class="footer-content">
+                <h2>Our Locations</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Anand</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Vadodara</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ahmedabad</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Surat</li>
+                </ul>
             </div>
-
             <div class="f-container">
                 <h2>Our Newsletter</h2>
                 <p>Subscribe for latest updates</p>
@@ -152,7 +156,7 @@
             <p>&copy; 2024 Designed by Anjali Thakur</p>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script>
         function validateEmail() {
@@ -168,6 +172,7 @@
             }
         }
     </script>
+
     <!-- JavaScript for Navbar Toggle -->
     <script>
         const menu = document.querySelector('#menu-bar');
