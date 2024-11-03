@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Add New Event</title>
-      <link rel="stylesheet" href="css/add_event.css">
-      <link rel="icon" href="photos/logo.jpg">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-
-    </head>
-   <body>
-  <header class="head">
-    <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle And Delight</a>
-    <nav class="navbar ">
-        <a href="index.html" style="font-size: 20px;">Home</a>
-        <a href="events.html" style="font-size: 20px;">Events</a>
-        <a href="add_event.html" style="font-size: 20px;">New Event</a>
-        <a href="location.html" style="font-size: 20px;">Locations</a>
-        <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
-        <a href="about_us.html" style="font-size: 20px;">About Us</a>
-        <a href="login.html" style="font-size: 20px;">Login</a>
-    </nav>
-    <div id="menu-bar"><i class="fas fa-bars"></i></div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add New Event</title>
+    <link rel="stylesheet" href="css/add_event.css" />
+    <link rel="icon" href="photos/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a
+        href="index.html"
+        class="logo"
+        style="font-size: 24px; color: goldenrod"
+        >Dazzle And Delight</a
+      >
+      <nav class="navbar">
+        <a href="index.html" style="font-size: 20px">Home</a>
+        <a href="events.html" style="font-size: 20px">Events</a>
+        <a href="add_event.html" style="font-size: 20px">New Event</a>
+        <a href="location.html" style="font-size: 20px">Locations</a>
+        <a href="contact_us.html" style="font-size: 20px">Contact Us</a>
+        <a href="about_us.html" style="font-size: 20px">About Us</a>
+        <a href="feedback.html" style="font-size: 20px">Feedback</a>
+        <a href="login.html" style="font-size: 20px">Login</a>
+      </nav>
+      <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
 
     <main class="content">
       <div class="main-header">
@@ -35,99 +52,108 @@
           <form id="event">
             <div class="event-label-textarea">
               <label for="Title">Title : </label>
-              <input type="text" name="ftitle" placeholder="Add title">
+              <input type="text" name="ftitle" placeholder="Add title" />
             </div>
 
             <div class="event-label-textarea">
               <label for="Description">Description : </label>
-              <input type="text" name="fdescription" placeholder="Add Description">
+              <input
+                type="text"
+                name="fdescription"
+                placeholder="Add Description"
+              />
             </div>
             <div class="event-label-textarea">
               <label for="Location">Location : </label>
-              <input type="text" name="flocation" placeholder="Add location">
+              <input type="text" name="flocation" placeholder="Add location" />
             </div>
 
-              <div class="event-label-textarea">
-                <label for="Date">Date : </label>
-                <input type="date" name="fdate" id="dateF">
-              </div>     
+            <div class="event-label-textarea">
+              <label for="Date">Date : </label>
+              <input type="date" name="fdate" id="dateF" />
+            </div>
 
             <div class="event-time">
-                <div class="event-label-textarea">
-                  <label for="fstart">Start Time:</label>
-                  <input type="time" name="fstart" class="hour">
-                </div>
-                <div class="event-label-textarea">
-                  <label for="fend">End Time:</label>
-                  <input type="time" name="fend" class="hour">
-                </div>
+              <div class="event-label-textarea">
+                <label for="fstart">Start Time:</label>
+                <input type="time" name="fstart" class="hour" />
+              </div>
+              <div class="event-label-textarea">
+                <label for="fend">End Time:</label>
+                <input type="time" name="fend" class="hour" />
+              </div>
             </div>
-            
+
             <div class="event-label-textarea-check">
-              <input type="checkbox" class="checkbox" name="fallday">
+              <input type="checkbox" class="checkbox" name="fallday" />
               <label for="fallday" class="all_day">All day</label>
             </div>
 
-            <input type="submit" onclick="check()" id="fsubmit" value="Save" class="button">
+            <input
+              type="submit"
+              onclick="check()"
+              id="fsubmit"
+              value="Save"
+              class="button"
+            />
           </form>
         </div>
       </div>
     </main>
     <footer>
-      <p>
-          Designed by Anjali Thakur :)
-      </p>
-  </footer>
+      <p>Designed by Anjali Thakur :)</p>
+    </footer>
 
     <script>
       var today = new Date().toISOString().split('T')[0];
-      document.getElementById("dateF").setAttribute('min', today);
+      document.getElementById('dateF').setAttribute('min', today);
 
-      function check(){
-        var f=document.getElementById("event");
+      function check() {
+        var f = document.getElementById('event');
 
-        var title=f.ftitle.value;
-        var description=f.fdescription.value;
-        var location=f.flocation.value;
+        var title = f.ftitle.value;
+        var description = f.fdescription.value;
+        var location = f.flocation.value;
         var dateT = f.fdate.value;
         var timeS = f.fstart.value;
         var timeE = f.fend.value;
 
-        if (title == "" || title.length < 6) {
-            alert("Please enter a valid title of length more than 10, thankyou.");
+        if (title == '' || title.length < 6) {
+          alert('Please enter a valid title of length more than 10, thankyou.');
         }
 
-        if (description == "" || description < 25) {
-            alert("Please enter a valid description of length more than 25, thankyou.");
+        if (description == '' || description < 25) {
+          alert(
+            'Please enter a valid description of length more than 25, thankyou.'
+          );
         }
 
-        if (location == "" || location < 3) {
-            alert("Please enter a valid location, thankyou.");
+        if (location == '' || location < 3) {
+          alert('Please enter a valid location, thankyou.');
         }
 
-        if (dateT == "" || dateT == null) {
-            alert("Please select a date, thankyou.");
+        if (dateT == '' || dateT == null) {
+          alert('Please select a date, thankyou.');
         }
 
-        if(!f.fallday.checked) {
-          if (timeS == "" || timeS == null) {
-            alert("Please select a start time, thankyou.");
+        if (!f.fallday.checked) {
+          if (timeS == '' || timeS == null) {
+            alert('Please select a start time, thankyou.');
           }
-        
-          if (timeE == "" || timeE == null) {
-            alert("Please select a end time, thankyou.");
+
+          if (timeE == '' || timeE == null) {
+            alert('Please select a end time, thankyou.');
+          }
+        } else {
+          if (!(timeS == '' || timeS == null)) {
+            alert('Please only select one type of time, thankyou.');
+          }
+
+          if (!(timeE == '' || timeE == null)) {
+            alert('Please only select one type of time, thankyou.');
           }
         }
-        else {
-          if (!(timeS == "" || timeS == null)) {
-            alert("Please only select one type of time, thankyou.");
-          }
-        
-          if (!(timeE == "" || timeE == null)) {
-            alert("Please only select one type of time, thankyou.");
-          }
-        }        
       }
     </script>
-   </body>
+  </body>
 </html>
