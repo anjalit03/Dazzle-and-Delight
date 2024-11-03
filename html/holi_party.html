@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dazzle and Delight</title>
-    <link rel="icon" href="photos/logo.jpg">
-    <link rel="stylesheet" href="css/eve_info.css">
-    <link rel="stylesheet" href="css/navbar.css">
-</head>
-<body>
+    <link rel="icon" href="photos/logo.jpg" />
+    <link rel="stylesheet" href="css/eve_info.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
     <header class="head">
-        <a href="index.html" class="logo" style="font-size: 24px;color: goldenrod;">Dazzle and Delight</a>
-        <nav class="navbar">
-            <a href="index.html" style="font-size: 20px;">Home</a>
-            <a href="events.html" style="font-size: 20px;">Events</a>
-            <a href="add_event.html" style="font-size: 20px;">New Event</a>
-            <a href="location.html" style="font-size: 20px;">Locations</a>
-            <a href="contact_us.html" style="font-size: 20px;">Contact Us</a>
-            <a href="about_us.html" style="font-size: 20px;">About Us</a>
-            <a href="login.html" style="font-size: 20px;">Login</a>
-        </nav>
-        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+      <a
+        href="index.html"
+        class="logo"
+        style="font-size: 24px; color: goldenrod"
+        >Dazzle and Delight</a
+      >
+      <nav class="navbar">
+        <a href="index.html" style="font-size: 20px">Home</a>
+        <a href="events.html" style="font-size: 20px">Events</a>
+        <a href="add_event.html" style="font-size: 20px">New Event</a>
+        <a href="location.html" style="font-size: 20px">Locations</a>
+        <a href="contact_us.html" style="font-size: 20px">Contact Us</a>
+        <a href="about_us.html" style="font-size: 20px">About Us</a>
+        <a href="feedback.html" style="font-size: 20px">Feedback</a>
+        <a href="login.html" style="font-size: 20px">Login</a>
+      </nav>
+      <div id="menu-bar"><i class="fas fa-bars"></i></div>
     </header>
-    
+
     <div class="kaurukaanibox">
-        <p class="sinop">
-        <b>Synopsis</b> Celebrate the vibrant festival of Holi at our Holi Party in New Delhi! Join us for a day filled with colors, music, and fun.
-        <br><br>
-        Experience traditional festivities with live music, dance, and delicious food. Come with your family and friends to enjoy this joyous occasion!
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam aperiam doloremque doloribus adipisci laboriosam eligendi ipsam in maiores expedita. Beatae earum facere ipsum laboriosam eius assumenda quia animi, est blanditiis.
+      <p class="sinop">
+        <b>Synopsis</b> Celebrate the vibrant festival of Holi at our Holi Party
+        in New Delhi! Join us for a day filled with colors, music, and fun.
+        <br /><br />
+        Experience traditional festivities with live music, dance, and delicious
+        food. Come with your family and friends to enjoy this joyous occasion!
+        <br /><br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        aperiam doloremque doloribus adipisci laboriosam eligendi ipsam in
+        maiores expedita. Beatae earum facere ipsum laboriosam eius assumenda
+        quia animi, est blanditiis.
         <button class="btn">Book Tickets</button>
-        </p>
-        
-        <div class="a-info">
-            <strong>Holi Party</strong>
-            <img src="photos/event11.jpg" />
-            <table>
-                <tbody>
-                    <tr><th>Location</th><td>New Delhi</td></tr>
-                    <tr><th>Genre</th><td>Festival</td></tr>
-                    <tr><th>For Age(s)</th><td>All Ages</td></tr>
-                    <tr><th>Language</th><td>Hindi</td></tr>
-                    <tr><th>Price</th><td>₹500</td></tr>
-                    <tr><th>Activities</th><td>Color throwing, music, dance, and food</td></tr>
-                    <tr><th>Live Performance</th><td>Enjoy a unique experience</td></tr>
-                </tbody>
-            </table>
-        </div>
+      </p>
+
+      <div class="a-info">
+        <strong>Holi Party</strong>
+        <img src="photos/event11.jpg" />
+        <table>
+          <tbody>
+            <tr>
+              <th>Location</th>
+              <td>New Delhi</td>
+            </tr>
+            <tr>
+              <th>Genre</th>
+              <td>Festival</td>
+            </tr>
+            <tr>
+              <th>For Age(s)</th>
+              <td>All Ages</td>
+            </tr>
+            <tr>
+              <th>Language</th>
+              <td>Hindi</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <th>Activities</th>
+              <td>Color throwing, music, dance, and food</td>
+            </tr>
+            <tr>
+              <th>Live Performance</th>
+              <td>Enjoy a unique experience</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
     <script>
-        document.querySelectorAll(".kaurukaanibox .a-info .k-link").forEach(function(e){
-            var t = e.textContent.split(", "),
-                n = document.createElement("div");
-            t.forEach(function(e, a){
-                var r = document.createElement("a");
-                r.textContent = e;
-                r.setAttribute("href", "/search?q=" + e + "&max-results=12");
-                n.appendChild(r);
-                a < t.length - 1 && n.appendChild(document.createTextNode(", "));
-            });
-            e.innerHTML = "";
-            e.appendChild(n);
+      document
+        .querySelectorAll('.kaurukaanibox .a-info .k-link')
+        .forEach(function (e) {
+          var t = e.textContent.split(', '),
+            n = document.createElement('div');
+          t.forEach(function (e, a) {
+            var r = document.createElement('a');
+            r.textContent = e;
+            r.setAttribute('href', '/search?q=' + e + '&max-results=12');
+            n.appendChild(r);
+            a < t.length - 1 && n.appendChild(document.createTextNode(', '));
+          });
+          e.innerHTML = '';
+          e.appendChild(n);
         });
     </script>
-</body>
+  </body>
 </html>
