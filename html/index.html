@@ -8,14 +8,10 @@
     <link rel="icon" href="photos/logo.jpg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -48,20 +44,20 @@
           <p>Explore. Discover. Make a Plan</p>
           <select class="search-field">
             <option disabled selected>Select event type</option>
-            <option>Music</option>
-            <option>Comedy</option>
-            <option>Documentary</option>
-            <option>Cultural</option>
-            <option>Games and Quizzes</option>
-            <option>Theatre and Art</option>
+            <option value="Music">Music</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Games and Quizzes">Games and Quizzes</option>
+            <option value="Theatre and Art">Theatre and Art</option>
           </select>
           <select class="search-field">
             <option disabled selected>City</option>
-            <option>New Delhi</option>
-            <option>Mumbai</option>
-            <option>Bangalore</option>
-            <option>Jaipur</option>
-            <option>Goa</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Goa">Goa</option>
           </select>
           <button class="btn">Search</button>
         </div>
@@ -147,33 +143,30 @@
     <!-- Footer Section -->
     <footer id="contact">
       <div class="container">
-        <div class="footer-content">
+        <div class="f-container ">
           <h2>Dazzle and Delight</h2>
-          <p>
-            Your one-stop platform to discover the best events, travel
-            experiences, and culinary delights in your city. We curate memorable
-            experiences that are worth your time.
-          </p>
-          <a href="add_event.html"
-            ><button class="btn">Register an Event</button></a
-          >
+          <p class="p1">Dazzle and Delight is a platform that helps you discover and buy the best in events,
+                    travel and food in your city. We strive to curate experiences that are worth your
+                    time and money, possibly something you have never tried before.</p>
+
+          <div>
+            <a href="add_event.html"><button class="btn">Register an Event</button></a>
+          </div>
           <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fab fa-pinterest"></i>
           </div>
         </div>
-        <div class="footer-content">
-          <h2>Our Locations</h2>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Anand</li>
-            <li><i class="fas fa-map-marker-alt"></i> Vadodara</li>
-            <li><i class="fas fa-map-marker-alt"></i> Mumbai</li>
-            <li><i class="fas fa-map-marker-alt"></i> Ahmedabad</li>
-            <li><i class="fas fa-map-marker-alt"></i> Surat</li>
-          </ul>
+        <div class="f-container">
+          <h2>Our Location</h2>
+          <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
+          <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
+          <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
+          <a href="#"><i class=" fas fa-angle-right "></i>Ahemdabad</a>
+          <a href="# "><i class="fas fa-angle-right "></i>Surat</a>
         </div>
         <div class="f-container">
           <h2>Our Newsletter</h2>
@@ -188,10 +181,14 @@
           </p>
         </div>
       </div>
-      <div class="copyright">
-        <p>&copy; 2024 Designed by Anjali Thakur</p>
-      </div>
+        <div class="copyright">
+          <p>&copy; 2024 Designed by Anjali Thakur</p>
+        </div>
     </footer>
+    
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="fas fa-arrow-up arrow-icon"></i>
+    </button>
 
     <!-- JavaScript -->
     <script>
@@ -226,6 +223,24 @@
           menu.classList.remove('active');
         }
       });
+    </script>
+    
+    <!-- Scroll to top button functionality added here -->
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              scrollTopBtn.style.display = "block";
+          } else {
+              scrollTopBtn.style.display = "none";
+          }
+      };
+
+      scrollTopBtn.onclick = function () {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      };  
+
     </script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan:wght@400;600&display=swap');
-/* Reset some default styling */
-/* Resetting some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,8 +62,8 @@ body {
     background-image: url('../photos/back-1.jpg');
     background-size: cover; 
     background-position: center;
-    height: 400px; /* Set the height based on your design */
-    width: 100%; /* Full-width for banners */
+    height: 400px; 
+    width: 100%; 
     color: #fff;
 }
 
@@ -91,7 +90,6 @@ body {
     background: #f3e5f5;
     color: #6a1b9a;
 }
-
 
 .btn {
     padding: 10px 20px;
@@ -125,8 +123,6 @@ body {
     flex-direction: row;
     align-items: center;
 }
-
-
 
 .app h1 {
     font-size: 2em;
@@ -188,6 +184,10 @@ body {
     padding-top: 30px;
 }
 
+.flatpickr-months .flatpickr-month {
+    height: 50px !important; /* Forces height if other styles are overriding it */
+}
+
 /* E-Invitation Section */
 .e-invitation {
     padding: 60px 5%;
@@ -229,56 +229,128 @@ body {
     margin-bottom: 15px;
 }
 
-/* Footer Section */
+/* footer section */
 footer {
-    background: #4a148c;
-    color: #fff;
-    padding: 40px 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: 70vh;
+    padding: 10px 10px;
 }
 
-footer h2 {
-    font-size: 1.5em;
-    color: #d1c4e9;
-    margin-bottom: 15px;
+#contact {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 16%, rgba(48, 61, 155, 1) 77%, rgba(9, 14, 34, 1) 99%);
+}
+
+.container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 4rem;
+}
+
+.f-container h2 {
+    font-size: 3rem;
+    color: #F3E5AB;
+    padding: 1rem 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.f-container a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--clr3);
+    padding: 1rem 0;
+    display: block;
+}
+
+.f-container i {
+    padding-right: .5rem;
+    color: var(--clr1);
+}
+
+.f-container p {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAF9F6;
+    font-size: 20px;
+}
+
+.f-container p p1 {
+    width: 10vw;
+}
+
+.f-container input {
+    width: 90%;
+    padding: 1rem;
+    background: #eee;
+    border: .2rem solid var(--clr1);
+}
+
+.f-container .btn {
+    font-size: 18px;
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient from blue to purple */
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    transition: transform 0.2s ease;
+}
+.f-container .btn:active {
+    transform: scale(0.98); /* Slightly shrinks button */
+    background-color: #1c5985; /* Darkens further */
+}
+.f-container .btn:hover {
+    background: linear-gradient(135deg, #2980b9, #713b8c);
+    transform: scale(1.05);
+}
+.f-container .social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.f-container .social i {
+
+    margin-top: 1rem;
+    font-size: 15px;
+    background: var(--clr3);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.f-container .social i:hover {
+    transform: scale(1.2) rotate(360deg);
+
+    transition: 1s ease;
 }
 
 .footer-content {
-    flex: 1;
-    min-width: 250px;
-    margin: 15px;
+    padding: 2rem 0;
+    text-align: center;
 }
-
-.footer-content p,
-.footer-content a {
-    color: #e1bee7;
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-
-.footer-content a:hover {
-    color: #d1c4e9;
-}
-
-.social i {
-    font-size: 1.5em;
-    margin: 0 10px;
-    color: #d1c4e9;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.social i:hover {
-    color: #fff;
+.footer-content h1 {
+    font-size: 3rem;
+    color: #aaa;
 }
 
 .copyright {
+    padding: 1rem 0;
     text-align: center;
-    padding: 20px 0;
-    color: #d1c4e9;
-    font-size: 0.9em;
+    background: var(--clr1);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.copyright p {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Responsive Design */
@@ -300,4 +372,32 @@ footer h2 {
     .vendor .title h1 {
         text-align: center;
     }
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none; 
+    background-color: rgba(2, 0, 36, 1);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(255, 2, 2, 0.938);
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: rgb(255, 255, 255); 
+}
+
+#scrollTopBtn .arrow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #33adff; 
 }
