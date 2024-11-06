@@ -296,7 +296,7 @@ header.head {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #33333321;
   color: #fff;
   /* position: relative; */
 }
@@ -320,15 +320,31 @@ header.head {
   text-decoration: none;
   font-size: 16px;
   padding: 10px;
-  transition: color 0.3s, background-color 0.3s;
+  position: relative;
 }
 
+.navbar a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: #f5a623;
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+/* 
 .navbar a.active,
 .navbar a:hover {
   color: #333;
   background-color: #f5a623;
   border-radius: 4px;
-}
+} */
 
 /* Menu bar for mobile */
 #menu-bar {
