@@ -1,74 +1,89 @@
 /* Header Styling */
 header.head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-  }
-  
-  .logo {
-    color: #f5a623;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .navbar {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    transition: color 0.3s, background-color 0.3s;
-    
-  }
-  
-  .navbar a.active,
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #33333321;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  color: #f5a623;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: #f5a623;
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+
+/* .navbar a.active,
   .navbar a:hover {
     color: #333;
     background-color: #f5a623;
     border-radius: 4px;
-  }
-  
-  /* Menu bar for mobile */
-  #menu-bar {
+  } */
+
+/* Menu bar for mobile */
+#menu-bar {
+  display: none;
+  font-size: 24px;
+  color: #f5a623;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
     display: none;
-    font-size: 24px;
-    color: #f5a623;
-    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-    }
-  
-    .navbar a {
-        padding: 12px;
-        text-align: center;
-        width: 100%;
-    }
-  
-    #menu-bar {
-        display: block;
-    }
-  
-    .navbar.show {
-        display: flex;
-    }
+
+  .navbar a {
+    padding: 12px;
+    text-align: center;
+    width: 100%;
   }
-  
+
+  #menu-bar {
+    display: block;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+}

@@ -657,13 +657,17 @@ svg {
     background-color: #f0c79f;
     color: #ffffff !important;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .login-btn:hover {
-    background-color: salmon;
+    background-color: #ff8c69; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
 }
+
 
 @media (max-width: 768px) {
     .header-container {
