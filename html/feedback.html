@@ -6,7 +6,10 @@
     <title>Dazzle And Delight - Feedback</title>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/feedback.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -32,6 +35,25 @@
       </nav>
       <div id="menu-bar"><i class="fas fa-bars"></i></div>
     </header>
+
+    <section id="section-list" style="display: none">
+      <span id="close-menu-btn"
+        ><i class="fas fa-times" style="display: block"></i
+      ></span>
+      <ul>
+        <li><a href="index.html" style="font-size: 20px">Home</a></li>
+        <li><a href="events.html" style="font-size: 20px">Events</a></li>
+        <li><a href="add_event.html" style="font-size: 20px">New Event</a></li>
+        <li><a href="location.html" style="font-size: 20px">Locations</a></li>
+        <li>
+          <a href="contact_us.html" style="font-size: 20px">Contact Us</a>
+        </li>
+        <li><a href="about_us.html" style="font-size: 20px">About Us</a></li>
+        <li><a href="feedback.html" style="font-size: 20px">Feedback</a></li>
+        <li><a href="login.html" style="font-size: 20px">Login</a></li>
+      </ul>
+    </section>
+
     <div class="feedback-container">
       <h2>Please share your feelings with us</h2>
       <form action="/submit-feedback" method="post">
@@ -109,5 +131,7 @@
         });
       });
     </script>
+
+    <script src="js/navbar_menu.js"></script>
   </body>
 </html>
