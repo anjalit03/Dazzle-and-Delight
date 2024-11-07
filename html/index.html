@@ -8,10 +8,19 @@
     <link rel="icon" href="photos/logo.jpg" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -35,6 +44,24 @@
       </nav>
       <div id="menu-bar"><i class="fas fa-bars"></i></div>
     </header>
+
+    <section id="section-list" style="display: none">
+      <span id="close-menu-btn"
+        ><i class="fas fa-times" style="display: block"></i
+      ></span>
+      <ul>
+        <li><a href="index.html" style="font-size: 20px">Home</a></li>
+        <li><a href="events.html" style="font-size: 20px">Events</a></li>
+        <li><a href="add_event.html" style="font-size: 20px">New Event</a></li>
+        <li><a href="location.html" style="font-size: 20px">Locations</a></li>
+        <li>
+          <a href="contact_us.html" style="font-size: 20px">Contact Us</a>
+        </li>
+        <li><a href="about_us.html" style="font-size: 20px">About Us</a></li>
+        <li><a href="feedback.html" style="font-size: 20px">Feedback</a></li>
+        <li><a href="login.html" style="font-size: 20px">Login</a></li>
+      </ul>
+    </section>
 
     <!-- Home Section -->
     <section class="home" id="home">
@@ -143,14 +170,19 @@
     <!-- Footer Section -->
     <footer id="contact">
       <div class="container">
-        <div class="f-container ">
+        <div class="f-container">
           <h2>Dazzle and Delight</h2>
-          <p class="p1">Dazzle and Delight is a platform that helps you discover and buy the best in events,
-                    travel and food in your city. We strive to curate experiences that are worth your
-                    time and money, possibly something you have never tried before.</p>
+          <p class="p1">
+            Dazzle and Delight is a platform that helps you discover and buy the
+            best in events, travel and food in your city. We strive to curate
+            experiences that are worth your time and money, possibly something
+            you have never tried before.
+          </p>
 
           <div>
-            <a href="add_event.html"><button class="btn">Register an Event</button></a>
+            <a href="add_event.html"
+              ><button class="btn">Register an Event</button></a
+            >
           </div>
           <div class="social">
             <i class="fab fa-facebook"></i>
@@ -165,8 +197,8 @@
           <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
           <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
           <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
-          <a href="#"><i class=" fas fa-angle-right "></i>Ahemdabad</a>
-          <a href="# "><i class="fas fa-angle-right "></i>Surat</a>
+          <a href="#"><i class="fas fa-angle-right"></i>Ahemdabad</a>
+          <a href="# "><i class="fas fa-angle-right"></i>Surat</a>
         </div>
         <div class="f-container">
           <h2>Our Newsletter</h2>
@@ -181,11 +213,11 @@
           </p>
         </div>
       </div>
-        <div class="copyright">
-          <p>&copy; 2024 Designed by Anjali Thakur</p>
-        </div>
+      <div class="copyright">
+        <p>&copy; 2024 Designed by Anjali Thakur</p>
+      </div>
     </footer>
-    
+
     <button id="scrollTopBtn" title="Go to top">
       <i class="fas fa-arrow-up arrow-icon"></i>
     </button>
@@ -224,23 +256,27 @@
         }
       });
     </script>
-    
+
     <!-- Scroll to top button functionality added here -->
     <script>
-      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
       window.onscroll = function () {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              scrollTopBtn.style.display = "block";
-          } else {
-              scrollTopBtn.style.display = "none";
-          }
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollTopBtn.style.display = 'block';
+        } else {
+          scrollTopBtn.style.display = 'none';
+        }
       };
 
       scrollTopBtn.onclick = function () {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      };  
-
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      };
     </script>
+
+    <script src="js/navbar_menu.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@ header.head {
 }
 
 .navbar a::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   width: 0%;
@@ -44,7 +44,6 @@ header.head {
 .navbar a:hover::before {
   width: 100%;
 }
-
 
 /* .navbar a.active,
   .navbar a:hover {
@@ -85,5 +84,43 @@ header.head {
 
   .navbar.show {
     display: flex;
+  }
+
+  #section-list {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #7b1fa2;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  #close-menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #section-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #section-list li {
+    margin: 30px 0;
+  }
+
+  #section-list a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
